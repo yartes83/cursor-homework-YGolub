@@ -51,7 +51,11 @@ body {
 .command {
 	font-weight: bold;
 }
+.description {
+	font-size: 19px;
+	font-family: "Times New Roman";
 
+}
 a:link {
 	color: darkblue;
 }
