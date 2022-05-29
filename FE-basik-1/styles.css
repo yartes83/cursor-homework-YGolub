@@ -1,0 +1,73 @@
+body {
+	height: 100%;
+	background-color: bisque;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: medium;
+}
+
+#header_logo {
+	display: table-cell;
+    border-radius: 15px;
+	vertical-align: top;
+}
+#header_text {
+	font-family: "Volja";
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+#tableContainer {
+	display: table;
+	border-spacing: 10px;
+}
+
+#tableRow {
+	display: table-row;
+}
+
+#links {
+	position: fixed;
+	top: 350px;
+	right: 15px;
+	border: none;
+
+}
+
+#logo_youtube {
+	border-radius: 15px;
+}
+
+#basicCommands {
+	margin-left: 10px;
+}
+
+#gitignore {
+	margin-left: 35px;
+	font-style: italic;
+}
+
+a:link {
+	color: darkblue;
+}
+a:visited {
+	color: darkorange;
+}
+a:hover {
+	color: orange;
+}
+footer {
+	text-align:       center;
+	padding:          15px;
+	margin: 150px 10px 10px 10px;
+	font-size:        80%;
+}
+.blue {
+	color: blue;
+	font-style: italic;
+}
+.yellow {
+	color: darkorange;
+	font-style: italic;
+}
