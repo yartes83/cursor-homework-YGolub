@@ -1,0 +1,57 @@
+body {
+    background-color: lightgray;
+}
+/* Таблиця tableHeader */
+#tableHeader {
+    display: table;
+    border-spacing: 10px;
+    width: 100%;
+    text-align: center;
+}
+#tableRow {display: table-row; height: 15px}
+#numberHM {display: table-cell;
+    border: double;
+    border-width: medium;
+    padding: 10px;
+    border-color: cadetblue;
+    border-top-left-radius: 15px;
+    width: 500px;
+    background-color: #EFF1F4;
+
+}
+#lessonTopic {display: table-cell;
+    border-style: double;
+    border-width: medium;
+    padding: 10px;
+    border-color: cadetblue;
+    background-color: #EFF1F4;
+
+}
+#profileStudent {display: table-cell;
+    border-style: double;
+    border-width: medium;
+    padding: 10px;
+    border-color: cadetblue;
+    border-top-right-radius: 15px;
+    background-color: #EFF1F4;
+} /* Таблиця tableHeader */
+
+#mainMenu {
+    border: double;
+    border-style: double;
+    border-color: cadetblue;
+    border-width: medium;
+    margin: 10px;
+    height: 1900px;
+    background-color: #EFF1F4
+}
+
+#mainFoto {
+    margin: 10px;
+    float: left;
+}
+
+.mainChaList {
+    font-weight: bold;
+    line-height: 2em;
+}
