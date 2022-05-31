@@ -1,5 +1,6 @@
 body {
-    background-color: lightgray;
+    background-color: #572727;
+    /* Це просто жесть вибрати колір, особливо різниця між ігровим моніком з HDR і офісним!!!  */
 }
 /* Таблиця tableHeader */
 #tableHeader {
@@ -13,10 +14,11 @@ body {
     border: double;
     border-width: medium;
     padding: 10px;
+    width: 500px;
     border-color: cadetblue;
     border-top-left-radius: 15px;
-    width: 500px;
-    background-color: #EFF1F4;
+
+    background-color: #F6F3F3;
 
 }
 #lessonTopic {display: table-cell;
@@ -24,7 +26,7 @@ body {
     border-width: medium;
     padding: 10px;
     border-color: cadetblue;
-    background-color: #EFF1F4;
+    background-color: #F6F3F3;
 
 }
 #profileStudent {display: table-cell;
@@ -33,7 +35,7 @@ body {
     padding: 10px;
     border-color: cadetblue;
     border-top-right-radius: 15px;
-    background-color: #EFF1F4;
+    background-color: #F6F3F3;
 } /* Таблиця tableHeader */
 
 #mainMenu {
@@ -42,16 +44,36 @@ body {
     border-color: cadetblue;
     border-width: medium;
     margin: 10px;
-    height: 1900px;
-    background-color: #EFF1F4
+    height: 2000px;
+    background-color: #F6F3F3;
 }
 
 #mainFoto {
     margin: 10px;
     float: left;
 }
-
 .mainChaList {
     font-weight: bold;
     line-height: 2em;
+}
+#mainPlotFilm {
+    font-size: 18px;
+    font-family: "Times New Roman";
+}
+
+#mainHistory {
+    padding: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+#sopranos {
+    float: left;
+    padding: 0px 10px 10px 0px;
+
+}
+#djoRidji {
+    float: right;
+    border-radius: 10px;
+    border-style: solid;
 }
