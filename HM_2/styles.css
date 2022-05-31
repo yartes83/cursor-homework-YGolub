@@ -15,17 +15,15 @@ body {
     border-width: medium;
     padding: 10px;
     width: 500px;
-    border-color: cadetblue;
+    border-color: black;
     border-top-left-radius: 15px;
-
     background-color: #F6F3F3;
-
 }
 #lessonTopic {display: table-cell;
     border-style: double;
     border-width: medium;
     padding: 10px;
-    border-color: cadetblue;
+    border-color: black;
     background-color: #F6F3F3;
 
 }
@@ -33,7 +31,7 @@ body {
     border-style: double;
     border-width: medium;
     padding: 10px;
-    border-color: cadetblue;
+    border-color: black;
     border-top-right-radius: 15px;
     background-color: #F6F3F3;
 } /* Таблиця tableHeader */
@@ -41,10 +39,10 @@ body {
 #mainMenu {
     border: double;
     border-style: double;
-    border-color: cadetblue;
+    border-color: black;
     border-width: medium;
     margin: 10px;
-    height: 2000px;
+    height: 1430px;
     background-color: #F6F3F3;
 }
 
@@ -84,4 +82,43 @@ body {
     border-radius: 10px;
     border-style: solid;
     margin: 15px;
+}
+
+footer {
+    display: table;
+    border-spacing: 10px;
+    width: 100%;
+    text-align: center;
+}
+#footerTable {
+    width: 100%;
+    height: 30px;
+    display: table-row;
+    height: 15px
+}
+#footerRow {
+    display: table-cell;
+    border: double;
+    border-width: medium;
+    padding: 10px;
+    width: 500px;
+    border-color: black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #F6F3F3;
+}
+
+a:link {
+    color: #572727;
+}
+a:visited {
+    color: darkred;}
+
+.blue {
+    color: blue;
+    font-style: italic;
+}
+.yellow {
+    color: darkorange;
+    font-style: italic;
 }
