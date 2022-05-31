@@ -49,8 +49,13 @@ body {
 }
 
 #mainFoto {
-    margin: 10px;
+    margin: 10px 30px 30px 10px;
     float: left;
+    border-style: solid;
+    border-color: #572727;
+    border-radius: 10px;
+
+
 }
 .mainChaList {
     font-weight: bold;
@@ -69,11 +74,14 @@ body {
 }
 #sopranos {
     float: left;
-    padding: 0px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 10px;
+    border-style: solid;
 
 }
 #djoRidji {
     float: right;
     border-radius: 10px;
     border-style: solid;
+    margin: 15px;
 }
