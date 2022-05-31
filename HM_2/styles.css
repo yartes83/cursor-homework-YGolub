@@ -9,7 +9,7 @@ body {
     width: 100%;
     text-align: center;
 }
-#tableRow {display: table-row; height: 15px}
+#tableRow {display: table-row;}
 #numberHM {display: table-cell;
     border: double;
     border-width: medium;
@@ -36,13 +36,15 @@ body {
     background-color: #F6F3F3;
 } /* Таблиця tableHeader */
 
+main {display: table; border-spacing: 10px; width: 100%;}
+#mainTable {display: table-row;}
 #mainMenu {
+    display: table-cell;
     border: double;
     border-style: double;
     border-color: black;
     border-width: medium;
     margin: 10px;
-    height: 1430px;
     background-color: #F6F3F3;
 }
 
