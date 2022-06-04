@@ -1,4 +1,4 @@
-body {background-color: #E5E5E5}
+body {background-color: #E5E5E5; font-family: 'Inter', 'Roboto', sans-serif;}
 
 .container {
     margin: 50px 24px 50px 24px;
@@ -204,10 +204,45 @@ p {
     box-shadow: 0px 12px 24px -6px rgb(96 96 96 / 15%), 0px 0px 1px rgb(96 96 96 / 10%);
     border-radius: 5px;
 }
+#b5_header{
+
+    height: 20px;
+    margin: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
 .banner_5 p {
 
+    width: 312px;
+    padding: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 32px 0px 20px 0px;
+}
+.banner_5 h4 {
+    display: inline-flex;
+    width: 350px;
+    vertical-align: center;
 
 }
+.banner_5  button {
+    background-color: #09b3af;
+    border-radius: 5px;
+    border: none;
+    margin-left: 50px;
+    text-transform: capitalize;
+    height: 35px;
+    width: 85px;
+    color: #ffffff;
+}
+.banner_5 a {color: #E5E5E5}
 
 
 
