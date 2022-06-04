@@ -308,7 +308,36 @@ p {
     border-radius: 6px;
     border: none;
 }
+.banner_7 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 32px;
 
+    width: 320px;
+    height: 260px;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(186, 226, 255, 0.15) 23.96%, rgba(229, 217, 255, 0.15) 71.87%, rgba(255, 255, 255, 0.15) 100%), #FFFFFF;
+    box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
+    border-radius: 20px;
+}
+
+.banner_8 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 16px;
+    gap: 12px;
+
+    width: 320px;
+    height: 137px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
+    border-radius: 4px;
+
+}
 
 
 
