@@ -92,10 +92,7 @@ p {
     margin-bottom: 40px;
     margin-left: 24px;
     border-radius: 15px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 6px 16px 6px 16px;
     background: #ffffff;
     box-shadow: 0px 12px 24px -6px rgb(96 96 96 / 15%), 0px 0px 1px rgb(96 96 96 / 10%);
 }
@@ -108,7 +105,6 @@ p {
     line-height: 20px;
     color: #0D0C22;
     margin: 15px;
-
 }
 .banner_3 img {
     background-color: #FDEEF4;
@@ -367,34 +363,50 @@ p {
     margin-top: 30px;
     border: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .banner_8 {
     display: block;
     align-items: flex-end;
-    padding: 16px;
+    padding: 16px 16px 16px 24px;
     gap: 12px;
     width: 320px;
     height: 137px;
     background: #FFFFFF;
     box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
     border-radius: 4px;
+}
+.banner_8 p {
+    height: 60px;
+    font-family: Arial; /* SF Pro Text в гугл-шрифтах такого нема */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin: 0px;
+    text-align: left;
+    letter-spacing: 0.8px;
+}
+#b_8 {
+    display: flex;
+    padding-top: 40px;
+
 
 }
-
+.banner_8 a {text-decoration: none;}
+.banner_8 button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+    border: none;
+    width: 64px;
+    height: 33px;
+    background: #6666FF;
+    border-radius: 4px;
+    margin-left: 130px;
+}
 
 
 
