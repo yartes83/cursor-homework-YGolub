@@ -88,6 +88,7 @@ p {
 
 .banner_3 {
     display: inline-flex;
+    width: 560px;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 24px;
@@ -105,6 +106,7 @@ p {
     line-height: 20px;
     color: #0D0C22;
     margin: 15px;
+    width: 347px;
 }
 .banner_3 img {
     background-color: #FDEEF4;
