@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body {font-family: 'Lato', sans-serif; margin: 0px;}
 
+/*Шапка сайту*/
 nav {
     width: 1440px;
     background-color: #ED4C5C;
@@ -13,8 +14,25 @@ h1 {
     display: block;
     position: absolute;
     margin: 0px;
-    padding: 0px;
-
+    padding-top: 122px;
+    padding-left: 165px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43.2px;
+    color: #ffffff;
+}
+nav p {
+    display: block;
+    position: absolute;
+    margin: 0px;
+    padding-top: 253px;
+    padding-left: 165px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 
@@ -22,6 +40,13 @@ h1 {
 
 
 
+
+
+
+
+
+
+/*Шапка сайту*/
 
 
 
