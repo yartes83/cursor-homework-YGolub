@@ -3,7 +3,7 @@ body {font-family: 'Lato', sans-serif; margin: 0px;box-sizing: content-box; heig
 
 /*Шапка сайту*/
 nav {
-    width: 1440px;
+    width: 100%;
     background-color: #ED4C5C;
     height: 500px;
     position: relative;
@@ -79,47 +79,60 @@ nav a {
     width: 134px;
     height: 32px;
 }
-
-
-
-
-
-
-
-
-
-
-
 /*Шапка сайту*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* main */
 
 #contact {
-    width: 1440px;
+    display: block;
+    width: 100%;
     height: 500px;
     background-color: #ffffff;
     margin: 0px;
     padding: 0px;
     position: relative;
+
+}
+#contact_p1 {
+    position: absolute;
+    width: 445px;
+    height: 107px;
+    padding-left: 176px;
+    padding-top: 117px;
+    color: #000000;
+    font-size: 36px;
+    line-height: 43.2px;
+
+}
+#contact_p2 {
+    position: absolute;
+    width: 445px;
+    height: 107px;
+    padding-left: 176px;
+    padding-top: 213px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+#firstName {
+    display: block;
+    position: absolute;
+    width: 255px;
+    height: 60px;
+    border: 1px solid #333333;
+    margin-left: 735px;
+    margin-top: 117px;
+    border-radius: 6px;
+}
+#firstName p {
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    font-weight: 400;
+    border-radius: 6px;
+    padding-top: 21px;
+    padding-left: 31px;
+    margin: 0px;
 }
 
 
@@ -128,7 +141,7 @@ nav a {
 
 
 footer {
-    width: 1440px;
+    width: 100%;
     height: 435px;
     background-color: #FAFAFA;
     margin: 0px;
