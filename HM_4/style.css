@@ -1,4 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-body {
-    font-family: 'Lato', sans-serif;
+body {font-family: 'Lato', sans-serif; margin: 0px;}
+
+nav {
+    width: 1440px;
+    background-color: #ED4C5C;
+    height: 500px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    display: block;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+    width: 1440px;
+    height: 500px;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+
+
+
+
+
+footer {
+    width: 1440px;
+    height: 435px;
+    background-color: #FAFAFA;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+
 }
