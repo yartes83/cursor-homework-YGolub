@@ -34,7 +34,47 @@ nav p {
     font-size: 14px;
     line-height: 20px;
 }
+#back_left {
+    display: block;
+    position: absolute;
+    margin: 0px;
+    padding-left: 691px;
+    padding-top: 116px;
+    width: 383px;
+    height: 267px;
+    border-radius: 15px;
 
+}
+#back_right {
+    display: block;
+    position: absolute;
+    margin: 0px;
+    padding-left: 841px;
+    padding-top: 116px;
+    width: 383px;
+    height: 267px;
+    border-radius: 15px;
+
+}
+#front_picture {
+    display: block;
+    position: absolute;
+    margin: 0px;
+    padding-left: 735px;
+    padding-top: 94px;
+    width: 445px;
+    height: 311px;
+    border-radius: 15px;
+}
+nav a {
+    display: block;
+    position: absolute;
+    margin: 0px;
+    padding-left: 163px;
+    padding-top: 357px;
+    width: 134px;
+    height: 32px;
+}
 
 
 
