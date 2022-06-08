@@ -143,7 +143,7 @@ main {
     position: absolute;
     width: 46%;
     margin: 0px;
-    height: 20px;
+    height: 58px;
     border-radius: 6px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -159,7 +159,7 @@ main {
     position: absolute;
     width: 46%;
     left: 51%;
-    height: 20px;
+    height: 58px;
     border-radius: 6px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -175,10 +175,10 @@ main {
 .phone {
     position: absolute;
     width: 97%;
-    height: 20px;
+    height: 58px;
     border-radius: 6px;
     padding: 19px 0px 19px 20px;
-    margin-top: 10%;
+    top: 25%;
     color: rgba(19, 39, 67, 0.5);
     display: block;
     box-sizing: border-box;
@@ -188,9 +188,16 @@ main {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+}
+.select {
+    position: absolute;
+    width: 97%;
+    height: 58px;
+    border-radius: 6px;
+    padding: 19px 0px 19px 20px;
+    top: 50%;
 
 }
-
 
 
 
