@@ -227,31 +227,105 @@ nav a {
 
 
 footer {
+    display: block;
+    position: relative;
     width: 100%;
     height: 435px;
     background-color: #FAFAFA;
     margin: 0px;
     padding: 0px;
-    position: relative;
+
 }
+#footer_header {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+#fh1 {
+    position: absolute;
+    margin-left: 166px;
+    margin-top: 85px;
+}
+#fh2 {
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 85px;
+}
+#fh3 {
+    position: absolute;
+    display: block;
+    margin-left: 734px;
+    margin-top: 85px;
+}
+#fh4 {
+    position: absolute;
+    margin-left: 1022px;
+    margin-top: 85px;
+}
+#footer_list {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+#address {
+    position: absolute;
+    margin-left: 166px;
+    margin-top: 140px;
+    padding: 0px;
+}
+#services{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 135px;
+    padding: 0px;
+}
+#get_link{
+    position: absolute;
+    display: block;
+    margin-left: 734px;
+    margin-top: 140px;
+}
+#get_phone {
+    position: absolute;
+    display: block;
+    margin-left: 734px;
+    margin-top: 165px;
+}
+#get_facebook {
+    position: absolute;
+    display: block;
+    margin-left: 738px;
+    margin-top: 200px;
+}
+#get_instagram {
+    position: absolute;
+    display: block;
+    margin-left: 760px;
+    margin-top: 198px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+#get_twitter {
+    position: absolute;
+    display: block;
+    margin-left: 786px;
+    margin-top: 200px;
+}
+#copy {
+    position: absolute;
+    display: block;
+    margin-left: 161px;
+    margin-top: 335px;
+}
+#visa {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    position: absolute;
+    margin-left: 1028px;
+    margin-top: 140px;
+}
 
 
 
