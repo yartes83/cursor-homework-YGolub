@@ -122,13 +122,14 @@ main {
     height: 65px;
     box-sizing: border-box;
     top: 60%;
-
 }
 
 .form {
+    box-sizing: border-box;
     position: absolute;
-    margin-top: 117px;
-    margin-left: 51%;
+    left: 51%;
+    top: 23%;
+    margin: 0px;
     height: 305px;
     width: 37.5%;
 }
@@ -140,7 +141,7 @@ main {
 .f_name {
     position: absolute;
     width: 225px;
-    margin-left: 9%;
+    margin: 0px;
     height: 20px;
     border-radius: 6px;
     font-family: 'Lato', sans-serif;
@@ -149,7 +150,7 @@ main {
     font-size: 16px;
     line-height: 19px;
     color: rgba(19, 39, 67, 0.5);
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px 19px 20px;
 }
 .l_name {
     position: absolute;
