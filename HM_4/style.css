@@ -16,7 +16,7 @@ h1 {
     position: absolute;
     margin: 0px;
     padding-top: 122px;
-    padding-left: 165px;
+    padding-left: 12%; /*165px*/
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     font-size: 36px;
@@ -28,7 +28,7 @@ nav p {
     position: absolute;
     margin: 0px;
     padding-top: 253px;
-    padding-left: 165px;
+    padding-left: 12%;/*165px*/
     color: #ffffff;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -39,7 +39,7 @@ nav p {
     display: block;
     position: absolute;
     margin: 0px;
-    padding-left: 691px;
+    padding-left: 48%;/*691px*/
     padding-top: 116px;
     width: 383px;
     height: 267px;
@@ -51,7 +51,7 @@ nav p {
     display: block;
     position: absolute;
     margin: 0px;
-    padding-left: 841px;
+    padding-left: 58%; /*841px*/
     padding-top: 116px;
     width: 383px;
     height: 267px;
@@ -63,7 +63,7 @@ nav p {
     display: block;
     position: absolute;
     margin: 0px;
-    padding-left: 735px;
+    padding-left: 51.5%;/*735px*/
     padding-top: 94px;
     width: 445px;
     height: 311px;
@@ -74,7 +74,7 @@ nav a {
     display: block;
     position: absolute;
     margin: 0px;
-    padding-left: 163px;
+    padding-left: 12%;/*163px*/
     padding-top: 357px;
     width: 134px;
     height: 32px;
@@ -82,38 +82,120 @@ nav a {
 /*Шапка сайту*/
 /* main */
 
-#contact {
+main {
     display: block;
+    position: relative;
     width: 100%;
     height: 500px;
     background-color: #ffffff;
     margin: 0px;
     padding: 0px;
-    position: relative;
-
+}
+.contact {
+    position: absolute;
+    width: 31%;
+    height: 160px;
+    left: 12%;
+    top: 23%;
+    box-sizing: border-box;
 }
 #contact_p1 {
     position: absolute;
-    width: 445px;
+    width: 100%;
     height: 107px;
-    padding-left: 176px;
-    padding-top: 117px;
     color: #000000;
     font-size: 36px;
     line-height: 43.2px;
-
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    box-sizing: border-box;
 }
 #contact_p2 {
     position: absolute;
-    width: 445px;
-    height: 107px;
-    padding-left: 176px;
-    padding-top: 213px;
+    width: 98%;
     color: #000000;
     font-size: 14px;
     line-height: 19.6px;
+    margin: 0px;
+    height: 65px;
+    box-sizing: border-box;
+    top: 60%;
+
 }
 
+.form {
+    position: absolute;
+    margin-top: 117px;
+    margin-left: 51%;
+    height: 305px;
+    width: 37.5%;
+}
+.name_last_name {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+}
+.f_name {
+    position: absolute;
+    width: 225px;
+    margin-left: 9%;
+    height: 20px;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    padding: 20px 0px 20px 20px;
+}
+.l_name {
+    position: absolute;
+    width: 225px;
+    margin-left: 80%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 #firstName {
     display: block;
     position: absolute;
@@ -223,7 +305,7 @@ nav a {
     line-height: 16px;
     text-transform: uppercase;
 }
-
+*/
 
 
 footer {
@@ -245,23 +327,23 @@ footer a {text-decoration: none; color: black}
 }
 #fh1 {
     position: absolute;
-    margin-left: 166px;
+    margin-left: 12%;
     margin-top: 85px;
 }
 #fh2 {
     position: absolute;
-    margin-left: 450px;
+    margin-left: 31%;
     margin-top: 85px;
 }
 #fh3 {
     position: absolute;
     display: block;
-    margin-left: 734px;
+    margin-left: 51%;
     margin-top: 85px;
 }
 #fh4 {
     position: absolute;
-    margin-left: 1022px;
+    margin-left: 71%;
     margin-top: 85px;
 }
 #footer_list {
@@ -273,13 +355,13 @@ footer a {text-decoration: none; color: black}
 }
 #address {
     position: absolute;
-    margin-left: 166px;
+    margin-left: 12%;
     margin-top: 140px;
     padding: 0px;
 }
 #services{
     position: absolute;
-    margin-left: 450px;
+    margin-left: 31%;
     margin-top: 135px;
     padding: 0px;
     text-decoration: none;
@@ -288,25 +370,25 @@ footer a {text-decoration: none; color: black}
 #get_link{
     position: absolute;
     display: block;
-    margin-left: 734px;
+    margin-left: 51%;
     margin-top: 140px;
 }
 #get_phone {
     position: absolute;
     display: block;
-    margin-left: 734px;
+    margin-left: 51%;
     margin-top: 165px;
 }
 #get_facebook {
     position: absolute;
     display: block;
-    margin-left: 738px;
+    margin-left: 51%;
     margin-top: 200px;
 }
 #get_instagram {
     position: absolute;
     display: block;
-    margin-left: 760px;
+    margin-left: 52.5%;
     margin-top: 198px;
     font-weight: bolder;
     font-size: 16px;
@@ -314,19 +396,19 @@ footer a {text-decoration: none; color: black}
 #get_twitter {
     position: absolute;
     display: block;
-    margin-left: 786px;
+    margin-left: 54.5%;
     margin-top: 200px;
 }
 #copy {
     position: absolute;
     display: block;
-    margin-left: 161px;
+    margin-left: 12%;
     margin-top: 335px;
 }
 #visa {
 
     position: absolute;
-    margin-left: 1028px;
+    margin-left: 71%;
     margin-top: 140px;
 }
 
