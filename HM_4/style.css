@@ -234,8 +234,9 @@ footer {
     background-color: #FAFAFA;
     margin: 0px;
     padding: 0px;
-
 }
+footer a {text-decoration: none; color: black}
+
 #footer_header {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -281,7 +282,9 @@ footer {
     margin-left: 450px;
     margin-top: 135px;
     padding: 0px;
+    text-decoration: none;
 }
+
 #get_link{
     position: absolute;
     display: block;
