@@ -26,11 +26,14 @@ tr, th, td {
 tfoot tr, td {border-bottom: 0px;}
 th {text-align: left}
 .blue_box {margin-right: 5px;}
-table th { column-rule: }
+
 
 .gray {
     color: rgba(255 255 255 / 50%);
 }
+#search {padding-top:5px; padding-bottom: 5px;
+}
+
 
 
 
