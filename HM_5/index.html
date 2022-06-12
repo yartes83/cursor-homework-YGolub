@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/b3d999_a589acc9bdd8432c935ee025e05e79bf~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/b3d999_a589acc9bdd8432c935ee025e05e79bf~mv2.png">
     <title>HM#5 Yaroslav Golub</title>
 </head>
@@ -14,13 +17,19 @@
     <thead> <!--Заголовки таблиці -->
         <tr>
             <th width="50%">
-                Name <img src="images/chek1.png" alt="чекбокс">
+                <select class="select_1">
+                    <option value="Name">Name</option>
+                    <option value="Name_1">Name_1</option>
+                    <option value="Name_2">Name_2</option>
+                    <option value="Name_3">Name_3</option>
+                </select>
             </th>
             <th colspan="2">
                 Date
             </th>
         </tr>
     </thead>
+
     <tr><!--Перша строка-->
         <td>
             File.pdf
@@ -67,13 +76,21 @@
         <thead> <!--Заголовки таблиці -->
         <tr>
             <th width="50%">
-                 <img src="images/chek2.png" alt="чекбокс"> Name <img src="images/chek1.png" alt="чекбокс">
+                <input type="checkbox" checked>
+
+                <select class="select_1">
+                    <option value="Name">Name</option>
+                    <option value="Name_1">Name_1</option>
+                    <option value="Name_2">Name_2</option>
+                    <option value="Name_3">Name_3</option>
+                </select>
             </th>
             <th colspan="2">
                 Date
             </th>
         </tr>
         </thead>
+
         <tr><!--Перша строка-->
             <td>
                <input type="checkbox">   File.pdf
@@ -119,16 +136,22 @@
         <thead> <!--Заголовки таблиці -->
         <tr>
             <th width="50%">
-                Name <img src="images/chek1.png" alt="чекбокс">
+                <select class="select_1">
+                    <option value="Name">Name</option>
+                    <option value="Name_1">Name_1</option>
+                    <option value="Name_2">Name_2</option>
+                    <option value="Name_3">Name_3</option>
+                </select>
             </th>
             <th>
                 Date
             </th>
             <th class="search">
-                <input id="search" type="search" placeholder="      Search">
+                <input id="search" type="search" placeholder=" 🔍︎  Search">
             </th>
         </tr>
         </thead>
+
         <tr><!--Перша строка-->
             <td>
                 <img class="blue_box" src="images/check3.png" alt="ящик"> File.pdf
