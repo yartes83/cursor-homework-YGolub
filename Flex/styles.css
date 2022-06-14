@@ -1,0 +1,50 @@
+.mainContainer {
+    width: 100vw;
+    height: 200vh;
+    background-color: burlywood;
+    border: 1px solid darkblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+}
+/*.secondContainer {*/
+/*    */
+/*    background-color: burlywood;*/
+/*    border: 1px solid darkblue;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+
+/*}*/
+
+.blok_1 {
+    width: 200px;
+    /*height: 200px;*/
+    background-color: green;
+    border: 1px solid darkblue;
+    line-height: 200px;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+.blok_2 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: 1px solid red;
+    line-height: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+.blok_3 {
+    width: 200px;
+    height: 200px;
+    background-color: fuchsia;
+    border: 1px solid darkblue;
+    line-height: 200px;
+    text-align: center;
+    font-weight: bold;
+}
