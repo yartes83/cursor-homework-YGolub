@@ -114,7 +114,7 @@ header {
 }
 .section_main_left_head button:hover {
     background-color: darkviolet;
-    transition: 0.8s;
+    transition: 0.09s;
 }
 .section_main_left_head a {
     font-family: 'Avenir', sans-serif;
@@ -125,7 +125,10 @@ header {
     color: white;
     text-decoration: none;
 }
-
+.section_head_right img {
+    margin-top: 336px;
+    margin-left: -44%;
+}
 
 
 
