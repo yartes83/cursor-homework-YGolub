@@ -2,69 +2,89 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" type="image/png" href="images/GITHUB_icon.png">
-	<title>Hello Git</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/GITHUB_icon.png">
+    <title>Hello Git</title>
 </head>
 
 <body>
 
 <header>
-	<div id="tableContainer">
-		<div id="tableRow">
-			<img id="header_logo"
-			    src="images/header_logo.jpeg" alt="Зображення логотипу">
+    <div id="tableContainer">
+        <div id="tableRow">
+            <img id="header_logo"
+                 src="images/header_logo.jpeg" alt="Зображення логотипу">
 
-	        <div id="header_text">
-		        <h1> Шпаргалка по використанню Git </h1>
-	       </div>
-		</div> <!-- tableRow -->
-	</div> <!--tableContainer-->
+            <div id="header_text">
+                <h1> Шпаргалка по використанню Git </h1>
+            </div>
+        </div> <!-- tableRow -->
+    </div> <!--tableContainer-->
 </header>
 <hr>
 
 <div id="links">
     <a href="https://www.youtube.com/results?search_query=github+%D0%B4%D0%BB%D1%8F+%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%B0%D1%8E%D1%89%D0%B8%D1%85"
-	   title="Посилання на Ютуб" target="_blank">
-		<img id="logo_youtube" src="images/youtube_logo.jpg" alt="Зображення логотипу Youtube">
+       title="Посилання на Ютуб" target="_blank">
+        <img id="logo_youtube" src="images/youtube_logo.jpg" alt="Зображення логотипу Youtube">
 
-	</a>
+    </a>
 </div>
 
 <div id="basicCommands">
-	<h3>Перелік основних команд Git:</h3>
-	<ul>
-		<li><span class="command"> git config --global user.name blabla</span> - <span class="description">налаштування імені користувача.</span></li>
-		<li><span class="command">git config --global user.email blabal@bla</span> - <span class="description">налаштування e-mail користувача.</span></li>
-		<li><span class="command">git init</span> - <span class="description">створює локальний репозиторій Git.</span></li>
-		<li><span class="command">git status</span> - <span class="description">стан файлів.</span></li>
-		<li><span class="command">git add</span> - <span class="description">додавання файлів для наступного коміта.</span></li>
-		<li><span class="command">git commit</span> - <span class="description">знімок поточного стану змін, доданих до розділу проіндексованих файлів.</span></li>
-		<li><span class="command">git log</span> - <span class="description">перераховує комміти, зроблені в репозиторії.</span></li>
-		<li><span class="command">git checkout</span> - <span class="description">дозволяє переміщатися між гілками, створеними командою git branch.</span></li>
-		<li><span class="command">git branch</span> - <span class="description">дозволяє створювати, переглядати, перейменовувати та видаляти гілки.</span></li>
-		<li><span class="command">git push</span> - <span class="description">вивантаження вмісту локального репозиторію у віддалений репозиторій.</span></li>
-		<li><span class="command">git pull</span> - <span class="description">видалення та завантаження вмісту віддаленого репозиторію та негайного оновлення локального репозиторію цим вмістом.</span></li>
-		<li><span class="command">git merge</span> - <span class="description">використовується для злиття однієї або декількох гілок у поточну.</span></li>
-		<li><span class="command">git clone</span> - <span class="description">вибір існуючого репозиторію з подальшим створенням його клона чи копії.</span></li>
-		<li><span class="command">git revert</span> - <span class="description">скасовує внесені зміни та додає новий коміт з отриманим вмістом.</span></li>
-		<li><span class="command">git reset</span> - <span class="description">скасування змін у розділі проіндексованих файлів.</span></li>
-		<li><span class="command">git rebase</span> - <span class="description">спосіб перенести зміни з однієї гілки до іншої. Rebase стискає всі зміни в один патч. Потім він інтегрує патч у цільову гілку.</span></li>
-		<li><span class="command">git cherry-pick</span> - <span class="description">бере зміни, що вносяться одним коммітом, і намагається повторно застосувати їх у вигляді нового комміту в поточній гілці.</span></li>
-		<li><span class="command">git stash</span> - <span class="description">призначена для того, щоб помістити поточні зміни, які ви здійснили у файлах, в окреме сховище.</span></li>
-	</ul>
+    <h3>Перелік основних команд Git:</h3>
+    <ul>
+        <li><span class="command"> git config --global user.name blabla</span> - <span class="description">налаштування імені користувача.</span>
+        </li>
+        <li><span class="command">git config --global user.email blabal@bla</span> - <span class="description">налаштування e-mail користувача.</span>
+        </li>
+        <li><span class="command">git init</span> - <span class="description">створює локальний репозиторій Git.</span>
+        </li>
+        <li><span class="command">git status</span> - <span class="description">стан файлів.</span></li>
+        <li><span class="command">git add</span> - <span
+                class="description">додавання файлів для наступного коміта.</span></li>
+        <li><span class="command">git commit</span> - <span class="description">знімок поточного стану змін, доданих до розділу проіндексованих файлів.</span>
+        </li>
+        <li><span class="command">git log</span> - <span class="description">перераховує комміти, зроблені в репозиторії.</span>
+        </li>
+        <li><span class="command">git checkout</span> - <span class="description">дозволяє переміщатися між гілками, створеними командою git branch.</span>
+        </li>
+        <li><span class="command">git branch</span> - <span class="description">дозволяє створювати, переглядати, перейменовувати та видаляти гілки.</span>
+        </li>
+        <li><span class="command">git push</span> - <span class="description">вивантаження вмісту локального репозиторію у віддалений репозиторій.</span>
+        </li>
+        <li><span class="command">git pull</span> - <span class="description">видалення та завантаження вмісту віддаленого репозиторію та негайного оновлення локального репозиторію цим вмістом.</span>
+        </li>
+        <li><span class="command">git merge</span> - <span class="description">використовується для злиття однієї або декількох гілок у поточну.</span>
+        </li>
+        <li><span class="command">git clone</span> - <span class="description">вибір існуючого репозиторію з подальшим створенням його клона чи копії.</span>
+        </li>
+        <li><span class="command">git revert</span> - <span class="description">скасовує внесені зміни та додає новий коміт з отриманим вмістом.</span>
+        </li>
+        <li><span class="command">git reset</span> - <span class="description">скасування змін у розділі проіндексованих файлів.</span>
+        </li>
+        <li><span class="command">git rebase</span> - <span class="description">спосіб перенести зміни з однієї гілки до іншої. Rebase стискає всі зміни в один патч. Потім він інтегрує патч у цільову гілку.</span>
+        </li>
+        <li><span class="command">git cherry-pick</span> - <span class="description">бере зміни, що вносяться одним коммітом, і намагається повторно застосувати їх у вигляді нового комміту в поточній гілці.</span>
+        </li>
+        <li><span class="command">git stash</span> - <span class="description">призначена для того, щоб помістити поточні зміни, які ви здійснили у файлах, в окреме сховище.</span>
+        </li>
+    </ul>
 </div>
 
 
 <p id="gitignore"><strong>.gitignore</strong> -<span class="description"> файли відстежуються у спеціальному файлі .gitignore, який реєструється у кореневому каталозі репозиторію.<br>
-У Git немає спеціальної команди для вказівки файлів, що ігноруються: замість цього необхідно вручну відредагувати файл .gitignore, щоб вказати в ньому нові файли, які повинні бути проігноровані</span></p>
+У Git немає спеціальної команди для вказівки файлів, що ігноруються: замість цього необхідно вручну відредагувати файл .gitignore, щоб вказати в ньому нові файли, які повинні бути проігноровані</span>
+</p>
 
 
 <footer>
-	&copy;Власник сторінки Голуб Ярослав, студент <a href="https://www.cursor.education/" target="_blank" title="Посилання на сайт компанії"><span class="blue">CURSOR.</span><span class="yellow">EDUCATION</span> </a>
+    &copy;Власник сторінки Голуб Ярослав, студент <a href="https://www.cursor.education/" target="_blank"
+                                                     title="Посилання на сайт компанії"><span
+        class="blue">CURSOR.</span><span class="yellow">EDUCATION</span> </a>
 </footer>
 </body>
 

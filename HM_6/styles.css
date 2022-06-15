@@ -1,0 +1,60 @@
+* {box-sizing: border-box}
+@font-face {
+    font-family: 'Avenir';
+    src: url("font/AvenirLTStd-Black.otf") format("opentype")
+}
+body {
+    width: 100vm;
+    background-color: white;
+    padding: 0px;
+}
+header {
+    position: fixed;
+    display: flex;
+    left: 15%;
+    align-items: center;
+    width: 70%;
+    height: 80px;
+    border: 1px solid red;
+    justify-content: space-between;
+}
+.header_left {
+    display: flex;
+    align-items: center;
+}
+.header_right {
+    display: flex;
+    align-items: center;
+}
+.nav_list {
+    list-style: none;
+    display: flex;
+    padding-left: 120px;
+    font-family: 'Avenir', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4B5D68;
+}
+
+.cf_image {padding: 18px 9px 0px 0px}
+.header_right {
+    display: flex;
+    align-items: center;
+}
+.header_right  button {
+    width: 210px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.005em;
+    line-height: 26px;
+    align-items: center;
+}
