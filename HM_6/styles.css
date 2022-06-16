@@ -8,9 +8,17 @@
     src: url("font/Helvetica.woff") format("woff")
 }
 body {
-    width: 100vm;
+    width: 100vw;
+    height: 3500px;
     background-color: white;
     padding: 0px;
+}
+.main {
+    position: relative;
+    width: 100vw;
+    background-color: white;
+    height: 1565px;
+
 }
 header {
     position: fixed;
@@ -21,6 +29,7 @@ header {
     height: 80px;
     /*border: 1px solid red;*/
     justify-content: space-between;
+    z-index: 9;
 }
 .header_left {
     display: flex;
@@ -129,12 +138,82 @@ header {
     margin-top: 336px;
     margin-left: -44%;
 }
+/*<div class="pink_area">*/
+.pink_area {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 560px;
+    left: 12%;
+    top: 99px;
+    border-radius: 50px;
+    background-color: rgba(240, 99, 184, 0.15);
+    box-sizing: border-box;
 
+}
+.pink_right_1 {
+    display: block;
+    width: 564px;
+    padding-right: 16%;
+    color: rgba(33, 35, 83, 1);
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+.pink_right_2 {
+    display: block;
+    font-family: Avenir, sans-serif;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: rgba(75, 93, 104, 1);
+    padding-top: 40px;
+    padding-right: 16%;
+    /*padding-bottom: 125px;*/
+}
+/*<div class="features">*/
+.features {
+    width: 80%;
+    height: 1002px;
+    margin-top: 149px;
+    position: relative;
+    display: block;
+    left: 12%;
+}
+.features_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    text-align: center;
 
-
-
-
-
+}
+#features_header {
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #212353;
+}
+#some_features {
+    margin-top: 50px;
+    font-family: 'Avenir', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: #4B5D68;
+}
+.features_blok1 {
+    margin-top: 149px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
 
 
 
