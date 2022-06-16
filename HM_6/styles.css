@@ -259,6 +259,72 @@ header {
 #features_blok2_left_img { width: 245px; height: 181px;}
 #features_blok2_right_img { width: 230px; height: 201px;}
 
+/*<div class="violet_block">*/
+.violet_block {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 709px;
+    background-color: #9C69E2;
+    border-radius: 50px;
+    margin-top: 200px;
+    left: 12%;
+    box-sizing: border-box;
+}
+.violet_main {
+
+    display: flex;
+    position: relative;
+    width: 84%;
+    height: 650px;
+    left: 8%;
+    margin-top: 109px;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+.violet_header {
+    margin-bottom: 88px;
+    margin-top: 80px;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+
+}
+.violet_form {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 330px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
