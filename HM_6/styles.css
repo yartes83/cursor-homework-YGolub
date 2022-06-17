@@ -271,13 +271,9 @@ header {
     border-radius: 50px;
     margin-top: 200px;
     left: 12%;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
-.violet_block_flex {
-    display: flex;
-    width: 100%;
-    height: 709px;
-}
+
 .violet_header {
     display: block;
     position: absolute;
@@ -291,7 +287,7 @@ header {
     line-height: 52px;
 }
 .violet_form {
-    position: relative;
+    position: absolute;
     margin-top: 249px;
     left: 8.3%;
     width: 84%;
@@ -337,10 +333,67 @@ header {
     line-height: 32.4px;
     color: black;
 }
+.violet_block_flex {
+    display: flex;
+    width: 84%;
+    height: 709px;
+    margin-left: 93px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#points {
+    display: block;
+    width: 63px;
+    height: 17px;
+    margin-bottom: 60px;
+}
+#arrows {
+    display: block;
+    width: 83px;
+    height: 20px;
+    margin-bottom: 60px;
+}
 
+footer {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 765px;
+    margin-top: 150px;
+}
+.footer_head {
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: 200px;
+    left: 12%;
+    background-color: rgba(212, 207, 207, 0.98);
+    border: 1px solid red;
+}
+.footer_head_left {
+    display: block;
+    position: absolute;
+    width: 100%;
 
-
-
+}
+.footer_main {
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: 400px;
+    left: 12%;
+    background-color: rgba(212, 207, 207, 0.98);
+    border: 1px solid red;
+}
+.footer_down {
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: 200px;
+    left: 12%;
+    background-color: rgba(212, 207, 207, 0.98);
+    border: 1px solid red;
+}
 
 
 
