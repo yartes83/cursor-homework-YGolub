@@ -12,6 +12,7 @@ body {
     height: 3500px;
     background-color: white;
     padding: 0px;
+    overflow-x: hidden;
 }
 .main {
     position: relative;
@@ -137,6 +138,8 @@ header {
 .section_head_right img {
     margin-top: 336px;
     margin-left: -44%;
+    width: 885px;
+    height: 468px;
 }
 /*<div class="pink_area">*/
 .pink_area {
@@ -144,7 +147,7 @@ header {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 70%;
     height: 560px;
     left: 12%;
     top: 99px;
@@ -176,7 +179,7 @@ header {
 }
 /*<div class="features">*/
 .features {
-    width: 80%;
+    width: 70%;
     height: 1040px;
     margin-top: 149px;
     position: relative;
@@ -261,46 +264,42 @@ header {
 
 /*<div class="violet_block">*/
 .violet_block {
-    display: block;
     position: relative;
-    width: 80%;
+    width: 70%;
     height: 709px;
     background-color: #9C69E2;
     border-radius: 50px;
     margin-top: 200px;
     left: 12%;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
-.violet_main {
-
+.violet_block_flex {
     display: flex;
-    position: relative;
-    width: 84%;
-    height: 650px;
-    left: 8%;
-    margin-top: 109px;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
+    width: 100%;
+    height: 709px;
 }
 .violet_header {
-    margin-bottom: 88px;
-    margin-top: 80px;
+    display: block;
+    position: absolute;
+    margin-top: 109px;
+    left: 8.3%;
     color: white;
     font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-
 }
 .violet_form {
-    display: flex;
-    position: relative;
-    width: 100%;
+    position: absolute;
+    margin-top: 249px;
+    left: 8.3%;
+    width: 84%;
     height: 330px;
     background-color: white;
     border-radius: 20px;
+    box-sizing: content-box;
+    box-shadow: 0 20px 0 rgba(156, 105, 226, 0.3);
 }
 
 
