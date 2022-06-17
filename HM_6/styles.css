@@ -423,7 +423,7 @@ footer {
     line-height: 26px;
     color: #212353;
 }
-.footer_main>p> {
+.footer_main>p {
     font-family: 'Avenir', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -443,6 +443,7 @@ footer {
     margin-top: 20px;
 }
 .footer_left>a {text-decoration: none; color: #212353}
+.footer_head_right>a {text-decoration: none; color: white}
 .dataWarehouse {margin-left: 10px}
 .warehouse {
     font-family: 'Avenir', sans-serif;
@@ -476,7 +477,18 @@ footer {
     justify-content: space-between;
     flex-direction: row;
 }
-.footer_down_left {display: block; margin-top: 50px;}
+.footer_down_left {display: block;
+    margin-top: 50px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #212353;
+}
+
+
+
 .footer_down_right {display: block; margin-top: 50px;}
 
 #request_demo {
