@@ -291,7 +291,7 @@ header {
     line-height: 52px;
 }
 .violet_form {
-    position: absolute;
+    position: relative;
     margin-top: 249px;
     left: 8.3%;
     width: 84%;
@@ -301,10 +301,42 @@ header {
     box-sizing: content-box;
     box-shadow: 0 20px 0 rgba(156, 105, 226, 0.3);
 }
-
-
-
-
+.man {
+    position: absolute;
+    width: 132px;
+    height: 90px;
+    left: 10.8%;
+    margin-top: 60px;
+}
+.john_fang {
+    position: absolute;
+    margin-top: 80px;
+    left: 30%;
+}
+.john_fang>a {
+    font-family: Avenir, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22.4px;
+    color: rgba(156, 105, 226, 1);
+}
+#jf {
+    font-family: 'Avenir', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+}
+.jf_text {
+    margin-top: 19px;
+    font-family: Avenir, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 32.4px;
+    color: black;
+}
 
 
 
