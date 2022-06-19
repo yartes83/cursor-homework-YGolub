@@ -9,4 +9,8 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+
+}
+ul {
+    list-style: none;
 }
