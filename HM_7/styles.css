@@ -1,7 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {width: 100%;}
 .mainContainer {
     width: 1440px;
@@ -201,7 +199,6 @@ h1 {
     width: 1280px;
     height: 814px;
     margin-top: 115px;
-    border: 1px solid black;
 }
 .ourApartments>p {
     font-family: 'Montserrat', sans-serif;
@@ -218,7 +215,6 @@ h1 {
     margin-bottom: 60px;
     width: 100%;
     height: 620px;
-    border: 1px solid blue;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 300px);
@@ -330,8 +326,90 @@ h1 {
     background: linear-gradient(rgba(17, 17, 17, 0.5),  rgba(17, 17, 17, 0.5)), url(images/apartments5.png);
     flex-direction: column;
 }
+.moreApartments {
+    width: 344px;
+    height: 45px;
+    margin-left: 488px;
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+    border: none;
+    color: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+.aboutUs {
+    border-radius: 1px;;
+    position: relative;
+    display: grid;
+    margin-top: 70px;
+    width: 1280px;
+    height: 310px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.aboutUsHead {grid-row: 1 / 2; grid-column: 1 / 2;}
+.aboutUsTittle {grid-row: 2 / 6; grid-column: 1 / 4;}
+.aboutUsAchievements {grid-row: 3 / 6; grid-column: 4 / 9;}
+.aboutUsHead {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #2B7AF1;
+}
+.aboutUsTittle {
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #111111;
+}
+.aboutUsAchievements {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hr {
+    border: none;
+    background: linear-gradient(to right, #fff, #FFB039, #FF7A00, #FF7A00, #FF7A00, #FFB039, #fff);
+    height: 1px;
+    border-radius: 1px;
+    margin-left: 81px;
+    margin-right: 81px;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+.contacts {
+    border: 1px solid violet;
+    margin-top: 107px;
+    width: 1280px;
+    height: 429px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
 
-/*344*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
