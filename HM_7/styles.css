@@ -586,7 +586,7 @@ footer {
     margin-top: -197px;
     background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.9)), url(images/footer.png);
 }
-
+.footerImg {width: 40px; height: 40px}
 
 
 
