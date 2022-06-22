@@ -1,0 +1,15 @@
+h1 {
+    font-size: 35px;
+    color: violet;
+    transition: all 0.5s ease-in;
+}
+h1:hover {
+    color: green;
+}
+h1::selection {
+    color: #4A7EFF;
+    background-color: #e6842e;
+}
+#input:focus {
+
+}
