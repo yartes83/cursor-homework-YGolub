@@ -362,6 +362,7 @@ footer {
     width: 100vw;
     height: 765px;
     margin-top: 150px;
+    border-top: 2px solid rgba(156, 105, 226, 0.2);
 }
 /*Верхній флекс-блок*/
 .footer_head {
