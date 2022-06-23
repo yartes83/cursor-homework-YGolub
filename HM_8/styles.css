@@ -31,19 +31,13 @@
     background: linear-gradient( blue, yellow);
     font-size: 25px;
 }
-.block:nth-child(4n + 0) {
+.block:nth-child(n + 21) {
     background-color: #4A7EFF;
     color: yellow;
 }
 .block:nth-child(4n + 3) {
     background-color: red;
 }
-.block:nth-child(24) {
-    background-color: red;
-    color: #FFFFFF;
-
-}
-
 /*-----------------------------------------------------------------------------------------------------------*/
 .create {
     display: flex;
