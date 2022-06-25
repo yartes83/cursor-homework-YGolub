@@ -4,9 +4,13 @@
     margin-left: 4%;
 }
 @media (max-width: 992px) {
-    .headerPhones {
-        width: 100%;
-        object-fit: cover;
+    /*.headerPhones {*/
+    /*    width: 68.8%;*/
+    /*    object-fit: cover;*/
+    /*}*/
+    header {
+        width: 68.8%;
+        height: auto;
     }
 
 }
