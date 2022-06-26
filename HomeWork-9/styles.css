@@ -129,11 +129,44 @@ header {
     height: 100%;
     background-image: url("images/block3_right.png");
 }
+/*------------------------------------------------------------------------------------------------------------------*/
+.fourBlock {
+    border: 1px solid violet;
+    position: relative;
+    width: 100%;
+    height: 18.25%;
+    background-image: url("images/four_block_background.png");
+    text-align: center;
+
+}
+.fourBlock h2 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-top: 6%;
+}
+.features {
+    position: relative;
+    display: grid;
+    width: 80%;
+    height: 75%;
+    margin-left: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
 
-
-
-
+}
+.itemText {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
 
 
 
