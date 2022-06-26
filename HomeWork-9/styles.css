@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .wrapper { width: 1440px; height: 4027px; margin-left: 4%;}
+/*------------------------------------------------------------------------------------------------------------------*/
 header {
     width: 100%; /*1440px*/
     height: 16.51353%;  /*665px*/
@@ -43,23 +44,91 @@ header {
 .headerButtons {
     display: flex;
     width: 350px;
-    height: 36px;
-
+    height: 47px;
+    justify-content: space-between;
+    cursor: pointer;
 }
-#App {
-    background-image: url("images/buttonApp.png");
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.secondBlock {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 14.7%;
 }
+.leftSecondBlock {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5) url(images/B2_background.png) no-repeat;
+}
+.rightSecondBlock {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    height: 60%;
+    margin-top: 9%;
+}
+.sb_front_image {position:relative;  z-index: 5; margin-left: 21%; margin-top: 17%; box-shadow: -22.0416px 23.8785px 48.9814px rgb(0 0 0 / 50%); border-radius: 4px;}
+.sb_back_image {position:relative; margin-left: 34.9%; margin-top: -5%; z-index: 0; box-shadow: -22.0416px 23.8785px 48.9814px rgb(0 0 0 / 50%); border-radius: 4px; background-color: #4F4F4F;}
 
-
-
-
-
-
-
-
-
-
-
+.rsb_header {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+}
+.rsb_header_position2 {margin-top: 3%;}
+.rsb_header2 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+}
+.rsb_text_position {margin-top: 3%;}
+.rsb_text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+}
+.rsb_footerText_position {margin-top: 3%;}
+.rsb_footerText {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+    cursor: pointer;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+.thirdBlock {
+    display: flex;
+    width: 100%;
+    height: 17.73%;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.thirdBlock_left {
+    position: relative;
+    width: 36%;
+    height: 70%;
+}
+.thirdBlock_right {
+    position: relative;
+    width: 52%;
+    height: 100%;
+    background-image: url("images/block3_right.png");
+}
 
 
 
