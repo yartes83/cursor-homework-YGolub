@@ -1,21 +1,35 @@
-.wrapper {
-    width: 1440px;
-    height: 4027px;
-    margin-left: 4%;
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    url("fonts/productsans.ttf") format("ttf")
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.wrapper { width: 1440px; height: 4027px; margin-left: 4%;}
 header {
-    width: 1440px;
-    height: 665px;
-    display: flex;
+    width: 100%; /*1440px*/
+    height: 16.51353%;  /*665px*/
+    display: block;
     position: relative;
     background-color: #F4F6F9;
-    background-image: url("images/frame.svg");
-    background-size: 67% auto;
+    background-image: url("images/headerBack.png");
+    background-size: 56% auto;
     background-position: right 0;
     background-repeat: no-repeat;
 }
+.headerMenu {
+    display: block;
+    position: absolute;
+    width: 39.9%;
+    height: 85%;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+.logo {display: flex; width: 16.5%;   /*99px*/ height: 5.7%;  /*32px;*/ justify-content: space-between; margin-bottom: 20%;}
 
+.logo h3 {font-family:'Product Sans',sans-serif; font-size: 24px; line-height: 29px; letter-spacing: -0.02em; color: #5282F0;}
 
+.headerText {font-family: 'Lato', sans-serif; font-style: normal; font-weight: 700; font-size: 36px; line-height: 48px; letter-spacing: 0.03em; color: #333333;}
 
 
 
