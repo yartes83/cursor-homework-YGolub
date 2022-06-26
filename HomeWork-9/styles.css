@@ -3,7 +3,7 @@
     font-style: normal;
     url("fonts/productsans.ttf") format("ttf")
 }
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .wrapper { width: 1440px; height: 4027px; margin-left: 4%;}
 header {
@@ -29,11 +29,26 @@ header {
 
 .logo h3 {font-family:'Product Sans',sans-serif; font-size: 24px; line-height: 29px; letter-spacing: -0.02em; color: #5282F0;}
 
-.headerText {font-family: 'Lato', sans-serif; font-style: normal; font-weight: 700; font-size: 36px; line-height: 48px; letter-spacing: 0.03em; color: #333333;}
+.headerText {margin-bottom: 5%;  font-family: 'Lato', sans-serif; font-style: normal; font-weight: 700; font-size: 36px; line-height: 48px; letter-spacing: 0.03em; color: #333333;}
 
+.headerText2 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #4F4F4F;
+    margin-bottom: 8.42%;
+}
+.headerButtons {
+    display: flex;
+    width: 350px;
+    height: 36px;
 
-
-
+}
+#App {
+    background-image: url("images/buttonApp.png");
+}
 
 
 
