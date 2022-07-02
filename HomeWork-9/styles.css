@@ -238,12 +238,11 @@ header {
 .points {margin-top: 3.5%; margin-left: 46%}
 /*------------------------------------------------------------------------------------------------------------------*/
 .sixBlock {
-    border: 1px solid violet;
     width: 100%;
     height: 6.85%;
     position: relative;
 }
-.sixBlock>p {
+.b6_7 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -269,11 +268,23 @@ header {
     border: 1px solid red;
     width: 100%;
     height: 11.95%;
+    display: flex;
 }
-
-
-
-
+.sevenLeft {
+    display: block;
+    width: 46.25%;
+    height: 100%;
+    background-image: url("images/b7_background.png");
+}
+.sevenRight{
+    display: block;
+    height: 100%;
+    width: 53.8%;
+    background-color: white;
+}
+.sevenRight>p {width: 73%; margin-left: 10%; margin-bottom: 6%}
+.sevenHeader {text-align: left; margin: 12% 0 8% 10%}
+.sevenButtons {margin-left: 10%}
 
 
 
