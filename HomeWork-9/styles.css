@@ -265,7 +265,6 @@ header {
 }
 /*------------------------------------------------------------------------------------------------------------------*/
 .sevenBlock {
-    border: 1px solid red;
     width: 100%;
     height: 11.95%;
     display: flex;
@@ -285,12 +284,36 @@ header {
 .sevenRight>p {width: 73%; margin-left: 10%; margin-bottom: 6%}
 .sevenHeader {text-align: left; margin: 12% 0 8% 10%}
 .sevenButtons {margin-left: 10%}
-
-
-
-
-
-
+/*------------------------------------------------------------------------------------------------------------------*/
+footer {
+    border: 1px solid green;
+    display: flex;
+    width: 100%;
+    height: 3.15%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00ADEE;
+}
+.footer_left{margin-top: auto; margin-bottom: auto}
+.footerCenter {width: 30%;}
+#footerList {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.footerRight {width: 10%}
+#footerIcons {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
 
 
 
