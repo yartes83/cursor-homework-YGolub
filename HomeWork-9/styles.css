@@ -95,10 +95,8 @@ header {
         height: 44px;
         margin-left: 25px;
         margin-top: 55px;
-
     }
 }
-
 /*------------------------------------------------------------------------------------------------------------------*/
 
 .secondBlock {
@@ -141,7 +139,7 @@ header {
     line-height: 37px;
     color: #333333;
 }
-.rsb_text_position {margin-top: 3%;}
+.rsb_text_position {margin-top: 3%; width: 407px; height: 185px}
 .rsb_text {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -159,6 +157,46 @@ header {
     line-height: 21px;
     color: #00ADEE;
     cursor: pointer;
+}
+@media (max-width: 360px) {
+    .leftSecondBlock {
+        border: 1px solid red;
+        position: absolute;
+        width: 388px;
+        height: 360px;
+        margin-top: 520px;
+        background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5) url(images/B2_background_mob.png) no-repeat ;
+
+    }
+    .sb_front_image {display: none}
+    .sb_back_image {display: none}
+
+    .rsb_header {
+        margin-top: 54px;
+        width: 320px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .rsb_header_position2 {
+        width: 320px;
+        height: 74px;
+        margin-left: 20px;
+        text-align: center;
+        margin-top: 27px;
+    }
+    .rsb_text {
+        width: 320px;
+        height: 208px;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .rsb_footerText {
+        width: 320px;
+        height: 22px;
+        text-align: center;
+        margin-top: 19px;
+    }
 }
 /*------------------------------------------------------------------------------------------------------------------*/
 .thirdBlock {
@@ -179,6 +217,9 @@ header {
     width: 52%;
     height: 100%;
     background-image: url("images/block3_right.png");
+}
+@media (max-width: 360px) {
+    .thirdBlock {margin-top: 50px}
 }
 /*------------------------------------------------------------------------------------------------------------------*/
 .fourBlock {
