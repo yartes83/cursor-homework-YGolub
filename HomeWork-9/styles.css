@@ -7,7 +7,9 @@
 
 .wrapper { max-width: 1440px; height: 4027px; margin: 0 auto; }
 
-
+@media (max-width: 360px) {
+    .wrapper { max-width: 360px; height: 5897px; margin: 0 auto; }
+}
 /*------------------------------------------------------------------------------------------------------------------*/
 header {
     width: 100%; /*1440px*/
@@ -29,12 +31,20 @@ header {
     margin-top: 6%;
 }
 .logo {display: flex; width: 16.5%;   /*99px*/ height: 5.7%;  /*32px;*/ justify-content: space-between; margin-bottom: 20%;}
-
-.logo h3 {font-family:'Product Sans',sans-serif; font-size: 1.5rem; line-height: 29px; letter-spacing: -0.02em; color: #5282F0;}
-
-.headerText {margin-bottom: 5%;  font-family: 'Lato', sans-serif; font-style: normal; font-weight: 700; font-size: 36px; line-height: 48px; letter-spacing: 0.03em; color: #333333;}
+.headerText {
+    display: flex;
+    margin-bottom: 5%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #333333;}
 
 .headerText2 {
+    width: 453px;
+    display: flex;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -54,11 +64,39 @@ header {
 @media (max-width: 360px) {
     header {
         max-width: 100%;
-        min-height: 525px;}
+        height: 525px;
+        background-image: none}
 
-    .logo h3 {font-size: 24px}
-    .headerText {font-size: 30px}
+    .logo {
+        position: absolute;
+        width: 99px;
+        height: 32px;
+        margin-left: 131px;
+        margin-top: 32px;}
+    .headerText {
+        font-size: 30px;
+        width: 320px;
+        height: 119px;
+        margin-left: 20px;
+        margin-top: 150px;
+        text-align: center;
+        line-height: 40px;
+        letter-spacing: 0.03em;}
+    .headerText2 {
+        margin-left: 20px;
+        width: 320px;
+        height: 70px;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;}
+    .headerMenu {margin: 0}
+    .headerButtons {
+        width: 310px;
+        height: 44px;
+        margin-left: 25px;
+        margin-top: 55px;
 
+    }
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -293,6 +331,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     background-color: #00ADEE;
+    cursor: pointer;
 }
 .footer_left{margin-top: auto; margin-bottom: auto}
 .footerCenter {width: 30%;}
@@ -308,7 +347,7 @@ footer {
     color: #FFFFFF;
     cursor: pointer;
 }
-.footerRight {width: 10%}
+.footerRight {width: 8%}
 #footerIcons {
     display: flex;
     list-style: none;
