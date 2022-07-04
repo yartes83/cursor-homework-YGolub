@@ -229,10 +229,10 @@ header {
 @media (max-width: 360px) {
     .thirdBlock {
         display: block;
-        border: 1px solid green;
         width: 360px;
         height: 410px;
         margin-top: 15px;
+        position: relative;
     }
     .rsb_text_position {
         margin-top: -10px;
@@ -241,41 +241,17 @@ header {
        height: 37px
     }
     .rsb_text_position {margin-top: 10px}
-    .thirdBlock_right {display: none}
-
+    .thirdBlock_right {
+        margin-top: 95px;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 565px;
+        background-image: url("images/block3_right_mob.png");
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------------------------------------------------------------------------------------*/
 .fourBlock {
-    border: 1px solid violet;
     position: relative;
     width: 100%;
     height: 18.25%;
@@ -313,6 +289,34 @@ header {
     font-size: 16px;
     line-height: 23px;
     color: #FFFFFF;
+}
+
+@media (max-width: 360px) {
+    .fourBlock {
+        margin-top: 535px;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 1775px;
+        background-color: #FAFAFA;
+        background-image: none;
+    }
+    .fill {fill: #00ADEE}
+    .fourBlock p {color: black}
+    .fourBlock h2 {color: black; width: 318px; height: 74px; text-align: center; position: relative; margin: 42px auto}
+    .features {
+        display: grid ;
+        width: 95%;
+        height: 1600px;
+        margin: 15px auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+
+        text-align: center;
+    }
+    .item1 {grid-column: auto; grid-row: auto; padding: 0 15px}
 }
 /*------------------------------------------------------------------------------------------------------------------*/
 .fifeBlock {
@@ -367,6 +371,32 @@ header {
 .left_circle {margin-left: 7%; margin-top: 3%;}
 .right_circle {margin-top: 2.9%; margin-left: 78%;}
 .points {margin-top: 3.5%; margin-left: 46%}
+@media (max-width: 360px) {
+    .usersSay {height: 161px; justify-content: center}
+    .fifeBlock {
+        display: block;
+        width: 100%;
+        height: 402px;
+    }
+    .fifeBlock p{
+        width: 300px;
+        height: 37px;
+        margin: 40px auto;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .block1 {display: none}
+    .block2 {display: none}
+    .block4 {display: none}
+    .block5 {display: none}
+    .left_circle {display: none}
+    .b5 {width: 309px; height: 161px; }
+    .points {margin-top: 10%; margin-left: 30%}
+    .right_circle {margin-top: 35px; margin-left: 300px;}
+}
 /*------------------------------------------------------------------------------------------------------------------*/
 .sixBlock {
     width: 100%;
@@ -394,6 +424,52 @@ header {
     vertical-align: center;
     justify-content: space-between;
 }
+@media (max-width: 360px) {
+    .sixBlock {
+        border: 1px solid violet;
+        display: block;
+        width: 360px;
+        height: 409px;
+    }
+    .b6_7 {width: 340px; height: 37px; margin: 45px auto}
+    .sixB_flex {
+        display: grid;
+        width: 330px;
+        height: 220px;
+        justify-content: center;
+        vertical-align: center;
+        grid-template-columns: 110px 110px 110px;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+    "one . two"
+    "three four fife"
+    "six six six";
+    }
+    .one { grid-area: one; }
+    .two { grid-area: two; }
+    .three { grid-area: three; }
+    .four { grid-area: four; }
+    .fife { grid-area: fife; }
+    .six { grid-area: six; margin: 0 auto}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------------------------------------------------------------------------------------------*/
 .sevenBlock {
     width: 100%;
@@ -415,6 +491,9 @@ header {
 .sevenRight>p {width: 73%; margin-left: 10%; margin-bottom: 6%}
 .sevenHeader {text-align: left; margin: 12% 0 8% 10%}
 .sevenButtons {margin-left: 10%}
+@media (max-width: 360px) {
+    .sevenBlock {display: none}
+}
 /*------------------------------------------------------------------------------------------------------------------*/
 footer {
     border: 1px solid green;
@@ -446,7 +525,9 @@ footer {
     list-style: none;
     justify-content: space-between;
 }
-
+@media (max-width: 360px) {
+    footer {display: none}
+}
 
 
 
