@@ -426,7 +426,6 @@ header {
 }
 @media (max-width: 360px) {
     .sixBlock {
-        border: 1px solid violet;
         display: block;
         width: 360px;
         height: 409px;
@@ -436,7 +435,7 @@ header {
         display: grid;
         width: 330px;
         height: 220px;
-        justify-content: center;
+        justify-content: start;
         vertical-align: center;
         grid-template-columns: 110px 110px 110px;
         grid-template-rows: 1fr 1fr 1fr;
@@ -447,29 +446,12 @@ header {
     "six six six";
     }
     .one { grid-area: one; }
-    .two { grid-area: two; }
+    .two { grid-area: two; margin-top: 10px}
     .three { grid-area: three; }
     .four { grid-area: four; }
-    .fife { grid-area: fife; }
-    .six { grid-area: six; margin: 0 auto}
+    .fife { grid-area: fife; align-self: start;margin-left: 30px}
+    .six { grid-area: six; margin: 10px auto}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------------------------------------------------------------------------------------*/
 .sevenBlock {
     width: 100%;
@@ -492,7 +474,22 @@ header {
 .sevenHeader {text-align: left; margin: 12% 0 8% 10%}
 .sevenButtons {margin-left: 10%}
 @media (max-width: 360px) {
-    .sevenBlock {display: none}
+    .sevenBlock {
+        display: block;
+        width: 100%;
+        height: 400px;
+
+    }
+    .sevenRight>p { width: 320px; height: 74px; text-align: center}
+    .sevenButtons {width: 320px;  margin-top: 150px;  }
+    .sevenLeft {
+        display: block;
+        position: absolute;
+        background-image: url("images/b7_background_mob.png");
+        width: 100%;
+        height: 261px;
+        margin-top: 400px;
+    }
 }
 /*------------------------------------------------------------------------------------------------------------------*/
 footer {
@@ -526,7 +523,31 @@ footer {
     justify-content: space-between;
 }
 @media (max-width: 360px) {
-    footer {display: none}
+    footer {
+        display: block;
+        margin-top: 260px;
+        width: 100%;
+        height: 210px;
+    }
+    .footerLeft {
+        margin-top: 43px;
+        margin-left: 21px;
+    }
+    .footerCenter {
+        margin-top: 75px;
+        position: absolute;
+        width: 321px;
+        height: 22px;
+        margin-left: 19px;
+    }
+    .footerRight {
+        width: 100px;
+        height: 25px;
+        margin-left: 21px;
+        margin-top: 11px;
+
+
+    }
 }
 
 
