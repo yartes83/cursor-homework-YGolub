@@ -1,0 +1,195 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: wheat;
+    position: relative;
+}
+.Swords {
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 35%;
+    background-color: black;
+}
+
+.sword_battle{
+    background-color: #00ADEE;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+    margin-top: 130px;
+    cursor: pointer;
+}
+.sword-1 {
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(269deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, white 30%);
+    top: 0;
+    left: 0;
+}
+.sword_battle:hover > .sword-1{
+    display: none;
+}
+.sword-2 {
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(90deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, white 30%);
+    left: 0;
+    top: 35px;
+    transform: rotate(0deg);
+    animation-play-state: running;
+
+}
+.sword_battle:hover > .sword-2 {
+    transform: rotate(-40deg);
+
+    box-shadow: 7px -2px 12px 2px rgb(227, 70, 118);
+    background: linear-gradient(90deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, rgb(215, 151, 193) 30%);
+}
+
+.sword-3 {
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(269deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, white 30%);
+    left: 0;
+    top: 65px;
+    transform: rotate(0deg);
+    animation-play-state: running;
+
+
+
+}
+.sword_battle:hover > .sword-3 {
+    top: 36px;
+    transform: rotate(40deg);
+    box-shadow: -8px -3px 15px 3px rgb(2, 244, 34);
+    background: linear-gradient(269deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, rgb(156, 214, 120) 30%);
+}
+
+
+.block-2{
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background-color: #EAE7DA;
+    top: 500px;
+    left: 31%;
+}
+
+.circle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    box-shadow:  0px 65px 13px -10px rgb(229, 147, 147);
+
+}
+
+.circles{
+    display: flex;
+    position: absolute;
+    left: 26.67%;
+    top: 43.5%;
+    cursor: pointer;
+
+}
+.circle-1 {
+    left: 0px;
+    top: 0;
+    background: linear-gradient(to right, #3C4D63, #2A4F6A);
+    animation-name: circle1;
+    animation-direction: alternate-reverse;
+    animation-duration: 0.45s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes circle1 {
+    0% {
+        left: 0px;
+        top: 0;
+
+    }
+    60% {
+        left: 0px;
+        top: 0;
+
+    }
+
+    80% {
+        left: -90px;
+
+
+    }
+    100% {
+        left: -90px;
+        top: -60px;
+
+    }
+}
+
+.circle-2 {
+    background: linear-gradient(to right, #324B68, #3E4962);
+}
+
+.circle-3 {
+    background: linear-gradient(to right, #43485D, #5C434F);
+}
+.circle-4 {
+    background: linear-gradient(to right, #6E4149, #853D3E);
+}
+.circle-5 {
+    background: linear-gradient(to right, #933B39, #AD3830);
+}
+.circle-6 {
+    background: linear-gradient(to right, #BC3728, #CD3322);
+}
+.circle-7 {
+    background: linear-gradient(to right, #D53325, #D53725);
+    animation-name: circle7;
+    animation-direction: alternate-reverse;
+    animation-duration: 0.45s;
+    animation-timing-function: ease;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+}
+@keyframes circle7 {
+    0% {
+        left: 0px;
+        top: 0;
+    }
+    50% {
+        left: 0px;
+        top: 0;
+    }
+    80% {
+        left: 90px;
+
+
+    }
+
+    100% {
+        left: 90px;
+        top: -60px;
+
+    }
+
+}
+.circles:hover > .circle {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+
+
+
