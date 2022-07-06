@@ -7,7 +7,7 @@
 .wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: wheat;
+    background-color: #f8edd6;
     position: relative;
 }
 .Swords {
@@ -20,12 +20,12 @@
     background-color: black;
 }
 .sword_battle{
-    background-color: black;
+    /*background-color: black;*/
     position: relative;
     width: 100px;
     height: 100px;
-    margin-left: 150px;
-    margin-top: 130px;
+    margin-left: 160px;
+    margin-top: 160px;
     cursor: pointer;
 }
 .sword-1 {
@@ -67,9 +67,16 @@
     transform: rotate(45deg);
     box-shadow: -8px -3px 15px 3px rgb(2, 244, 34);
     background: linear-gradient(270deg, rgb(130, 246, 92), rgb(189, 244, 78) 15%, black 15%, black 30%, greenyellow 30%);
+
 }
+/*.sword_battle:hover > .Swords {*/
+/*    background: url("images/yoda4.png");}*/
+
+
+.Swords:hover {background: url("images/yoda5.png");}
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 .Newtons_pendulum{
+    border: 1px solid rgba(187, 210, 246, 0.61);
     display: flex;
     position: relative;
     width: 600px;
