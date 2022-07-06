@@ -1,3 +1,7 @@
+/* https://www.w3schools.com/cssref/css3_pr_transform.asp
+ https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_transform&preval=scale(2,3)*/
+
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -13,9 +17,8 @@
     margin-left: 35%;
     background-color: black;
 }
-
 .sword_battle{
-    background-color: #00ADEE;
+    background-color: black;
     position: relative;
     width: 100px;
     height: 100px;
@@ -26,52 +29,44 @@
 .sword-1 {
     position: absolute;
     width: 100px;
-    height: 5px;
-    background: linear-gradient(269deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, white 30%);
-    top: 0;
-    left: 0;
+    height: 7px;
+    background: linear-gradient(270deg, white, white 15%, black 15%, black 30%, white 30%);
+    margin-top: 0;
+    margin-left: 0;
 }
-.sword_battle:hover > .sword-1{
-    display: none;
-}
+
 .sword-2 {
     position: absolute;
     width: 100px;
-    height: 5px;
-    background: linear-gradient(90deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, white 30%);
-    left: 0;
-    top: 35px;
-    transform: rotate(0deg);
+    height: 7px;
+    background: linear-gradient(90deg, white, white 15%, black 15%, black 30%, white 30%);
+    margin-left: 0;
+    margin-top: 35px;
     animation-play-state: running;
-
 }
-.sword_battle:hover > .sword-2 {
-    transform: rotate(-40deg);
-
-    box-shadow: 7px -2px 12px 2px rgb(227, 70, 118);
-    background: linear-gradient(90deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, rgb(215, 151, 193) 30%);
-}
-
 .sword-3 {
     position: absolute;
     width: 100px;
-    height: 5px;
-    background: linear-gradient(269deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, white 30%);
-    left: 0;
+    height: 7px;
+    background: linear-gradient(270deg, white, white 15%, black 15%, black 30%, white 30%);
+    margin-left: 0;
     top: 65px;
     transform: rotate(0deg);
-    animation-play-state: running;
+}
+.sword_battle:hover > .sword-1{ display: none;}
 
-
-
+.sword_battle:hover > .sword-2 {
+    transform: rotate(-45deg);
+    box-shadow: 7px -2px 12px 2px rgb(227, 70, 118);
+    background: linear-gradient(90deg, rgb(243, 62, 62), rgb(232, 84, 84) 15%, black 15%, black 30%, red 30%);
 }
 .sword_battle:hover > .sword-3 {
     top: 36px;
-    transform: rotate(40deg);
+    transform: rotate(45deg);
     box-shadow: -8px -3px 15px 3px rgb(2, 244, 34);
-    background: linear-gradient(269deg, rgb(223, 219, 219), rgb(218, 215, 215) 15%, black 15%, black 30%, rgb(156, 214, 120) 30%);
+    background: linear-gradient(270deg, rgb(130, 246, 92), rgb(189, 244, 78) 15%, black 15%, black 30%, greenyellow 30%);
 }
-
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .block-2{
     display: flex;
