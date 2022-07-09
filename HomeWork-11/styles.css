@@ -1,5 +1,37 @@
-.bi {vertical-align: -.125em; fill: currentColor;}
+.container-fluid {background-color: #FAFAFA;}
+.global {max-width: 1448px; background-color: #FAFAFA;}
+.df { background-color: #FAFAFA;}
+
 
 .head {border: 1px solid violet}
 .left_head {border: 1px solid red}
-.right_head {border: 1px solid greenyellow}}
+.right_head {border: 1px solid greenyellow}
+
+.btn {background-color: #4094EF; border: none; margin-left: 5px; height: 29px;}
+.follow {
+    width: 97px;
+    height: 29px;
+    color: white;
+    padding-bottom: 5px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 26px;
+    margin-right: 5px;
+}
+.name_user {
+    font-family: 'Helvetica Neue',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px!important;
+    line-height: 32px;
+    margin-top: 5px;
+}
+.fol {
+    font-family: 'Helvetica Neue',sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+}
