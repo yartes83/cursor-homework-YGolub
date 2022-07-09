@@ -3,9 +3,10 @@
 .df { background-color: #FAFAFA;}
 
 
-.head {border: 1px solid violet}
-.left_head {border: 1px solid red}
-.right_head {border: 1px solid greenyellow}
+/*.head {border: 1px solid violet}*/
+/*.left_head {border: 1px solid red}*/
+/*.right_head {border: 1px solid greenyellow}*/
+/*.friends{border: 1px solid greenyellow}*/
 
 .btn {background-color: #4094EF; border: none; margin-left: 5px; height: 29px;}
 .follow {
@@ -34,4 +35,25 @@
     font-size: 17px;
     font-weight: 500;
     line-height: 20px;
+}
+h6{
+    font-family: 'Helvetica Neue'
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+}
+.bla-bla p {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+}
+.friends p {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
 }
