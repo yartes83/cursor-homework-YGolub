@@ -1,5 +1,5 @@
+.bi {vertical-align: -.125em; fill: currentColor;}
 
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-}
+.head {border: 1px solid violet}
+.left_head {border: 1px solid red}
+.right_head {border: 1px solid greenyellow}}
