@@ -1,7 +1,7 @@
 @import url(reset.scss);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 body {
-  max-width: 1440px;
+  max-width: 100%;
   height: 4628px;
   background: #FFFFFF;
   border: 1px solid red;
@@ -63,6 +63,46 @@ header h1 {
   background: url("../images/mainFoto.svg");
   background-position: right;
   background-repeat: no-repeat;
+}
+.firstBlock .mainContent {
+  max-width: 539px;
+  padding-top: 352px;
+  margin-left: 11%;
+}
+.firstBlock .mainContent h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  color: #091133;
+  padding-bottom: 20px;
+}
+.firstBlock .mainContent p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #505F98;
+  padding-bottom: 76px;
+}
+.firstBlock .mainContent button {
+  border: 1px solid #091133;
+  border-radius: 2px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #111B47;
+  width: 189px;
+  height: 26px;
+}
+.firstBlock .mainContent button + button {
+  border: 1px solid red;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

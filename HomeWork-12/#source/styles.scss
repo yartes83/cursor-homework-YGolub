@@ -1,7 +1,7 @@
 @import url(reset.scss);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 body {
-  max-width: 1440px;
+  max-width: 100%;
   height: 4628px;
   background: #FFFFFF;
   border: 1px solid red;
@@ -37,7 +37,7 @@ body {
     line-height: 48px;
     color: #091133;
   }
-//шаблон маленької кнопки
+//шаблон маленької кнопки (2штуки)
 %btn_little {
   background: #111B47;
   border-radius: 2px;
@@ -62,6 +62,20 @@ body {
   line-height: $lh;
   color: $col;
 }
+//міксін для кнопки
+@mixin button($bord, $br, $ff, $fs, $fw, $fS, $lh, $col, $bc, $w, $h){
+  border: $bord;
+  border-radius: $br;
+  font-family: $ff;
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fS;
+  line-height: $lh;
+  color: $col;
+  background-color: $bc;
+  width: $w;
+  height: $h;
+}
 
 //--------------------------------------------------------------------------------------------------------------//
 header {
@@ -69,9 +83,9 @@ header {
     display: flex;
     position: absolute;
     justify-content: space-around;
-    & a {@extend %headerText};
+    & a {@extend %headerText}; //шаблон %headerText
     .leftHead {display: flex; width: 245 / 1440 * 100%; justify-content: space-between; margin-top: 18px}
-    & h1 {@include text('Roboto', normal, 900, 26px, 38px, 1px, #37447E); margin-top: 12px};
+    & h1 {@include text('Roboto', normal, 900, 26px, 38px, 1px, #37447E); margin-top: 12px}; //@mixin text
     & button {@extend %btn_little}
 }
 .firstBlock{
@@ -81,6 +95,16 @@ header {
     background: url("../images/mainFoto.svg");
     background-position: right;
     background-repeat: no-repeat;
+        .mainContent{
+          max-width: 539px;
+          padding-top: 352px;
+          margin-left: 11%;
+          & h1 {@include text('Roboto', normal, 500, 50px, 66px, 1px, #091133);
+                padding-bottom: 20px};
+          & p {@include text('Roboto', normal, 400, 18px, 30px, 1px, #505F98); padding-bottom: 76px;};
+          & button {@include button(1px solid #091133, 2px, 'Roboto', normal, 500, 16px, 26px, #FFFFFF, #111B47, 189px, 26px)} ;
+          & button + button {border: 1px solid red; text-align: center}
+        }
 
 
 }
