@@ -1,0 +1,19 @@
+{
+  "name": "cursor-homework-ygolub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yartes83/cursor-homework-YGolub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yartes83/cursor-homework-YGolub/issues"
+  },
+  "homepage": "https://github.com/yartes83/cursor-homework-YGolub#readme"
+}
