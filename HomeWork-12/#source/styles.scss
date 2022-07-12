@@ -99,6 +99,7 @@ header {
         & h1 {@include text('Roboto', normal, 900, 26px, 38px, 1px, #37447E); margin-top: 12px}; //@mixin text
         & button {@extend %btn_little}
 }
+//*****************************************************************************************************************
 .firstBlock{
     width: 100%;
     height: 1100px / 4628px * 100%;
@@ -114,10 +115,11 @@ header {
                   padding-bottom: 20px};
             & p {@include text('Roboto', normal, 400, 18px, 30px, 1px, #505F98); padding-bottom: 76px;};
             .buttonBlock {display: flex; justify-content: space-between; width: 78%}
-            & button {@include button(1px solid #091133, 2px, 'Roboto', normal, 500, 16px, 26px, #FFFFFF, #111B47, 189px, 26px);} ;
-            & button + button {@include button(2px solid #091133, 2px, 'Roboto', normal, 500, 16px, 26px, #091133, #E7ECFF, 189px, 26px)}
+            & button {@include button(1px solid #091133, 2px, 'Roboto', normal, 500, 16px, 26px, #FFFFFF, #111B47, 189px, 26px); cursor: pointer} ;
+            & button + button {@include button(2px solid #091133, 2px, 'Roboto', normal, 500, 16px, 26px, #091133, #E7ECFF, 189px, 26px); cursor: pointer}
         }
 }
+//*****************************************************************************************************************
 .secondBlock {
     border: 1px solid violet;
     width: 100%;
@@ -126,7 +128,6 @@ header {
     background-repeat: no-repeat;
     background-position-x: 80%;
     background-position-y: -10%;
-
     .sbLeft {
           width: 36%;
           height: 422px / 742px * 100%;
@@ -135,7 +136,6 @@ header {
           .sbLeftHeader{
                 width: 100%;
                 height: 50%;
-
                 & h2 {@extend %headText; margin-bottom: 15px / 742px * 100%};
                 & p {@extend %main_text}
           }
@@ -146,14 +146,15 @@ header {
                 margin-top: 56px / 422px * 100%;
                 .sbLeftFooterLeft {
                       width: 48%;
-                      & h4 {@extend %secondBlockFooter; margin: 10px 0 6px 0};
-                      & p{@include text('Roboto', normal, 400, 12px, 18px, 1px,  #5D6970)}
+                      & h4 {@extend %secondBlockFooter; margin: 10px 0 6px 0; cursor: pointer};
+                      & p{@include text('Roboto', normal, 400, 12px, 18px, 1px,  #5D6970)};
+                      & svg {cursor: pointer}
                 }
           }
     }
 }
+//*****************************************************************************************************************
 .thirdBlock {
-
     display: flex;
     border: 1px solid red;
     width: 100%;
@@ -162,21 +163,44 @@ header {
             border: 1px solid gold;
             width: 50%;
             height: 100%;
-            & img {
-                margin: 15% 5% 10% 17%;
-            }
-
+            & img {margin: 15% 5% 10% 17%; cursor: pointer;}
       }
-
-
       .thirdBlockRight{
         border: 1px solid blueviolet;
         width: 50%;
         height: 100%;
-
+        .blockText {
+              width: 55%;
+              margin: 18% 5% 40% 20%;
+              & h3 {@extend %headText};
+              & p {@extend %main_text};
+              & button {@include button(1px, 2px, 'Roboto', normal, 500, 14px, 24px, #FFFFFF, #111B47, 150px, 32px); margin-top: 10%; cursor: pointer};
+        }
       }
-
 }
+//*****************************************************************************************************************
+.fourBlock {
+    border: 1px solid violet;
+    width: 100%;
+    height: 800px;
+    background-image: url("../images/fourBlockImage.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -20%;
+      .fourBlockContent {;
+          width: 40%;
+          height: 60%;
+          margin: 10% auto;
+              text-align: center;
+              & h3 {@extend %headText; margin-bottom: 7%};
+              & p {@extend %main_text; margin-bottom: 5%};
+              & h2 {@include text('Roboto', normal, 500, 50px, 66px, 1px, #222F65)};
+              & #see {@include text('Roboto', normal, 400, 14px, 24px, 1px, #5D6970)};
+              & button {@include button(1px, 2px, 'Roboto', normal, 500, 14px, 24px, #FFFFFF, #111B47, 189px, 32px); cursor: pointer;}
+      }
+}
+//*****************************************************************************************************************
+
 
 
 

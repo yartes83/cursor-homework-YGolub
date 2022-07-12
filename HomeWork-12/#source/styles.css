@@ -9,7 +9,7 @@ body {
   overflow: scroll;
 }
 
-.secondBlock .sbLeft .sbLeftHeader p {
+.fourBlock .fourBlockContent p, .thirdBlock .thirdBlockRight .blockText p, .secondBlock .sbLeft .sbLeftHeader p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -28,7 +28,7 @@ header a {
   text-decoration: none;
 }
 
-.secondBlock .sbLeft .sbLeftHeader h2 {
+.fourBlock .fourBlockContent h3, .thirdBlock .thirdBlockRight .blockText h3, .secondBlock .sbLeft .sbLeftHeader h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -131,6 +131,7 @@ header h1 {
   background-color: #111B47;
   width: 189px;
   height: 26px;
+  cursor: pointer;
 }
 .firstBlock .mainContent button + button {
   border: 2px solid #091133;
@@ -144,6 +145,7 @@ header h1 {
   background-color: #E7ECFF;
   width: 189px;
   height: 26px;
+  cursor: pointer;
 }
 
 .secondBlock {
@@ -179,6 +181,7 @@ header h1 {
 }
 .secondBlock .sbLeft .sbLeftFooter .sbLeftFooterLeft h4 {
   margin: 10px 0 6px 0;
+  cursor: pointer;
 }
 .secondBlock .sbLeft .sbLeftFooter .sbLeftFooterLeft p {
   font-family: "Roboto";
@@ -187,6 +190,9 @@ header h1 {
   font-size: 12px;
   line-height: 18px;
   color: #5D6970;
+}
+.secondBlock .sbLeft .sbLeftFooter .sbLeftFooterLeft svg {
+  cursor: pointer;
 }
 
 .thirdBlock {
@@ -202,11 +208,83 @@ header h1 {
 }
 .thirdBlock .thirdBlockLeft img {
   margin: 15% 5% 10% 17%;
+  cursor: pointer;
 }
 .thirdBlock .thirdBlockRight {
   border: 1px solid blueviolet;
   width: 50%;
   height: 100%;
+}
+.thirdBlock .thirdBlockRight .blockText {
+  width: 55%;
+  margin: 18% 5% 40% 20%;
+}
+.thirdBlock .thirdBlockRight .blockText button {
+  border: 1px;
+  border-radius: 2px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #111B47;
+  width: 150px;
+  height: 32px;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.fourBlock {
+  border: 1px solid violet;
+  width: 100%;
+  height: 800px;
+  background-image: url("../images/fourBlockImage.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -20%;
+}
+.fourBlock .fourBlockContent {
+  width: 40%;
+  height: 60%;
+  margin: 10% auto;
+  text-align: center;
+}
+.fourBlock .fourBlockContent h3 {
+  margin-bottom: 7%;
+}
+.fourBlock .fourBlockContent p {
+  margin-bottom: 5%;
+}
+.fourBlock .fourBlockContent h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  color: #222F65;
+}
+.fourBlock .fourBlockContent #see {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5D6970;
+}
+.fourBlock .fourBlockContent button {
+  border: 1px;
+  border-radius: 2px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #111B47;
+  width: 189px;
+  height: 32px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

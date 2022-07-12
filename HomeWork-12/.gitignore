@@ -1,0 +1,23 @@
+@mixin button($bord, $br, $ff, $fs, $fw, $fS, $lh, $col, $bc, $w, $h){
+  border: $bord;
+  border-radius: $br;
+  font-family: $ff;
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fS;
+  line-height: $lh;
+  color: $col;
+  background-color: $bc;
+  width: $w;
+  height: $h;
+}
+
+//міксін для тексту
+@mixin text($ff, $fs, $fw, $fS, $lh, $ls, $col){
+  font-family: $ff;
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fS;
+  line-height: $lh;
+  color: $col;
+}
