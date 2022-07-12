@@ -95,7 +95,7 @@ header {
     position: absolute;
     justify-content: space-around;
         & a {@extend %headerText}; //шаблон %headerText
-        .leftHead {display: flex; width: 245 / 1440 * 100%; justify-content: space-between; margin-top: 18px}
+        .leftHead {display: flex; width: 245 / 1440 * 100%; justify-content: space-between; margin-top: 18px};
         & h1 {@include text('Roboto', normal, 900, 26px, 38px, 1px, #37447E); margin-top: 12px}; //@mixin text
         & button {@extend %btn_little}
 }
@@ -200,7 +200,53 @@ header {
       }
 }
 //*****************************************************************************************************************
+footer {
+    border: 1px solid green;
+    width: 100%;
+    height: 216px / 4628px * 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #E7ECFF;
+      .footerUp {
+            display: flex;
+            justify-content: space-between;
+            width: 73%;
+            height: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 4%;
+            border-bottom: 1px solid #CDD1D4;
+            //border-bottom-color: #CDD1D4;
+            & p {@include text('Roboto', normal, 500, 14px, 24px, 1px, #939EA4)};
+            & h3 {@include text('Roboto', normal, 900, 26px, 38px, 1px, #37447E)};
+            & button {@extend %btn_little;margin-top: 0;};
+      }
+      .footerDown {
+            display: flex;
+            justify-content: space-between;
+            //border: 1px solid red;
+            width: 73%;
+            height: 30%;
+            margin-left: auto;
+            margin-right: auto;
+              .footerDown_Left {
+                    width: 22%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & p {@extend %headerText; color: #929ECC; }
+              }
+              .footerDown_Right {
+                    width: 18%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & img {cursor: pointer}
 
+              }
+      }
+
+}
 
 
 
