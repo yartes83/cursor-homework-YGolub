@@ -53,6 +53,15 @@ body {
   margin-top: 18px;
   cursor: pointer;
 }
+//шаблон для заголовків другий блок
+%secondBlockFooter {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #091133;
+}
 //міксін для тексту
 @mixin text($ff, $fs, $fw, $fS, $lh, $ls, $col){
   font-family: $ff;
@@ -76,6 +85,8 @@ body {
   width: $w;
   height: $h;
 }
+$thirdBlock: 1755px; //висота третього блоку
+$thirdBlockMob: 1500px; //висота третього блоку на мобілці
 
 //--------------------------------------------------------------------------------------------------------------//
 header {
@@ -108,16 +119,64 @@ header {
         }
 }
 .secondBlock {
-    border: 1px solid red;
+    border: 1px solid violet;
     width: 100%;
-    height: 742px;
+    height: 600px;
     background: url("../images/secondBlockImage.svg");
     background-repeat: no-repeat;
     background-position-x: 80%;
-    background-position-y: center;
+    background-position-y: -10%;
+
+    .sbLeft {
+          width: 36%;
+          height: 422px / 742px * 100%;
+          margin-top: 10%;
+          margin-left: 7%;
+          .sbLeftHeader{
+                width: 100%;
+                height: 50%;
+
+                & h2 {@extend %headText; margin-bottom: 15px / 742px * 100%};
+                & p {@extend %main_text}
+          }
+          .sbLeftFooter {
+                display: flex;
+                justify-content: space-between;
+                height: 138px / 422px * 100%;
+                margin-top: 56px / 422px * 100%;
+                .sbLeftFooterLeft {
+                      width: 48%;
+                      & h4 {@extend %secondBlockFooter; margin: 10px 0 6px 0};
+                      & p{@include text('Roboto', normal, 400, 12px, 18px, 1px,  #5D6970)}
+                }
+          }
+    }
+}
+.thirdBlock {
+
+    display: flex;
+    border: 1px solid red;
+    width: 100%;
+    height: $thirdBlock;
+      .thirdBlockLeft {
+            border: 1px solid gold;
+            width: 50%;
+            height: 100%;
+            & img {
+                margin: 15% 5% 10% 17%;
+            }
+
+      }
+
+
+      .thirdBlockRight{
+        border: 1px solid blueviolet;
+        width: 50%;
+        height: 100%;
+
+      }
 
 }
-
 
 
 
