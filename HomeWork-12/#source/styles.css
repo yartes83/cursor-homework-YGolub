@@ -1,14 +1,20 @@
 @import url(reset.scss);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-body {
+.wrapper {
   max-width: 100%;
   height: 4628px;
   background: #FFFFFF;
-  border: 1px solid red;
   margin: 0 auto;
   overflow: scroll;
 }
 
+@media (max-width: 720px) {
+  .wrapper {
+    max-width: 360px;
+    height: 4628px;
+    margin: 0 auto;
+  }
+}
 .fourBlock .fourBlockContent p, .thirdBlock .thirdBlockRight .blockText p, .secondBlock .sbLeft .sbLeftHeader p {
   font-family: "Roboto";
   font-style: normal;
@@ -83,10 +89,32 @@ header h1 {
   color: #37447E;
   margin-top: 12px;
 }
+@media (max-width: 720px) {
+  header {
+    height: 110px;
+  }
+  header .leftHead {
+    display: flex;
+    width: 17.0138888889%;
+    flex-direction: column;
+    margin-top: 18px;
+  }
+  header button {
+    width: 80px;
+    font-size: 14px;
+  }
+  header a {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 18px;
+    color: #505F98;
+  }
+}
 .firstBlock {
   width: 100%;
   height: 23.768366465%;
-  border: 1px solid violet;
   background: url("../images/mainFoto.svg");
   background-position: right;
   background-repeat: no-repeat;
@@ -148,8 +176,39 @@ header h1 {
   cursor: pointer;
 }
 
+@media (max-width: 720px) {
+  .firstBlock {
+    background: url("../images/mainFoto.svg");
+    width: 100%;
+    height: 850px;
+  }
+  .firstBlock .mainContent {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+  .firstBlock .mainContent h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    color: #091133;
+  }
+  .firstBlock .mainContent .buttonBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+  }
+  .firstBlock .mainContent button {
+    width: 150px;
+  }
+  .firstBlock .mainContent button + button {
+    width: 150px;
+  }
+}
 .secondBlock {
-  border: 1px solid violet;
   width: 100%;
   height: 600px;
   background: url("../images/secondBlockImage.svg");
@@ -195,14 +254,35 @@ header h1 {
   cursor: pointer;
 }
 
+@media (max-width: 720px) {
+  .secondBlock {
+    height: 550px;
+    width: 95%;
+    background: none;
+    text-align: center;
+  }
+  .secondBlock .sbLeft {
+    width: 98%;
+    margin: 0 10px 0 15px;
+  }
+  .secondBlock .sbLeft .sbLeftHeader h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    color: #091133;
+  }
+  .secondBlock .sbLeft .sbLeftFooter {
+    margin-top: 220px;
+  }
+}
 .thirdBlock {
   display: flex;
-  border: 1px solid red;
   width: 100%;
   height: 1755px;
 }
 .thirdBlock .thirdBlockLeft {
-  border: 1px solid gold;
   width: 50%;
   height: 100%;
 }
@@ -211,7 +291,6 @@ header h1 {
   cursor: pointer;
 }
 .thirdBlock .thirdBlockRight {
-  border: 1px solid blueviolet;
   width: 50%;
   height: 100%;
 }
@@ -235,8 +314,49 @@ header h1 {
   cursor: pointer;
 }
 
+@media (max-width: 720px) {
+  .thirdBlock {
+    width: 100%;
+    height: 1050px;
+  }
+  .thirdBlock .thirdBlockLeft {
+    display: none;
+  }
+  .thirdBlock .thirdBlockRight {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .thirdBlock .thirdBlockRight .blockText {
+    width: 96%;
+    margin: 5% auto;
+    text-align: center;
+  }
+  .thirdBlock .thirdBlockRight .blockText h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #091133;
+    margin-bottom: 20px;
+  }
+  .thirdBlock .thirdBlockRight .blockText button {
+    border: 1px;
+    border-radius: 2px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #111B47;
+    width: 150px;
+    height: 32px;
+    margin-top: 10%;
+    cursor: pointer;
+  }
+}
 .fourBlock {
-  border: 1px solid violet;
   width: 100%;
   height: 800px;
   background-image: url("../images/fourBlockImage.svg");
@@ -287,8 +407,16 @@ header h1 {
   cursor: pointer;
 }
 
+@media (max-width: 720px) {
+  .fourBlock {
+    width: 100%;
+    height: 600px;
+  }
+  .fourBlock .fourBlockContent {
+    width: 98%;
+  }
+}
 footer {
-  border: 1px solid green;
   width: 100%;
   height: 4.6672428695%;
   display: flex;
@@ -349,6 +477,63 @@ footer .footerDown .footerDown_Right {
 }
 footer .footerDown .footerDown_Right img {
   cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  footer {
+    width: 100%;
+    height: 200px;
+  }
+  footer .footerUp {
+    display: flex;
+    text-align: center;
+    vertical-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0;
+    width: 98%;
+    height: 80px;
+  }
+  footer .footerUp p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #939EA4;
+  }
+  footer .footerUp h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #37447E;
+  }
+  footer .footerUp button {
+    margin-top: 0;
+    width: 120px;
+    height: 42px;
+    margin-left: 40px;
+  }
+  footer .footerDown {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .footerDown .footerDown_Left {
+    width: 95%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .footerDown .footerDown_Right {
+    width: 95%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

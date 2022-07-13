@@ -1,12 +1,15 @@
 @import url(reset.scss);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-body {
+.wrapper {
   max-width: 100%;
   height: 4628px;
   background: #FFFFFF;
-  border: 1px solid red;
+  //border: 1px solid red;
   margin: 0 auto;
   overflow: scroll;
+}
+@media (max-width: 720px) {
+  .wrapper { max-width: 360px; height: 4628px; margin: 0 auto; }
 }
 //шаблон тексту основного наповнення сайту
 %main_text {
@@ -23,6 +26,15 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  line-height: 24px;
+  color: #505F98;
+  text-decoration: none;
+}
+%headerText_mob {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
   line-height: 24px;
   color: #505F98;
   text-decoration: none;
@@ -86,7 +98,7 @@ body {
   height: $h;
 }
 $thirdBlock: 1755px; //висота третього блоку
-$thirdBlockMob: 1500px; //висота третього блоку на мобілці
+$thirdBlockMob: 1050px; //висота третього блоку на мобілці
 
 //--------------------------------------------------------------------------------------------------------------//
 header {
@@ -99,11 +111,19 @@ header {
         & h1 {@include text('Roboto', normal, 900, 26px, 38px, 1px, #37447E); margin-top: 12px}; //@mixin text
         & button {@extend %btn_little}
 }
+@media (max-width: 720px){
+  header {
+    height: 110px;
+    .leftHead {display: flex; width: 245 / 1440 * 100%; flex-direction: column; margin-top: 18px};
+     & button {@extend %btn_little; width: 80px; font-size: 14px;};
+      & a {@include text('Roboto', normal, 500, 17px, 18px, 1px, #505F98)};
+  }
+}
 //*****************************************************************************************************************
 .firstBlock{
     width: 100%;
     height: 1100px / 4628px * 100%;
-    border: 1px solid violet;
+    //border: 1px solid violet;
     background: url("../images/mainFoto.svg");
     background-position: right;
     background-repeat: no-repeat;
@@ -119,9 +139,26 @@ header {
             & button + button {@include button(2px solid #091133, 2px, 'Roboto', normal, 500, 16px, 26px, #091133, #E7ECFF, 189px, 26px); cursor: pointer}
         }
 }
+@media (max-width: 720px){
+  .firstBlock {
+      background: url("../images/mainFoto.svg");
+      width: 100%;
+      height: 850px;
+      .mainContent {
+          text-align: center;
+          width: 90%;
+          margin: 0 auto;
+          padding-top: 200px;
+          & h1 {@include text('Roboto', normal, 500, 40px, 50px, 1px, #091133);  };
+              .buttonBlock {display: flex; justify-content: space-between; width: 98%};
+          & button {width: 150px};
+          & button + button {width: 150px};
+      }
+  }
+}
 //*****************************************************************************************************************
 .secondBlock {
-    border: 1px solid violet;
+    //border: 1px solid violet;
     width: 100%;
     height: 600px;
     background: url("../images/secondBlockImage.svg");
@@ -153,20 +190,30 @@ header {
           }
     }
 }
+@media (max-width: 720px) {
+  .secondBlock {height: 550px; width: 95%;  background: none; text-align: center;
+      .sbLeft {width: 98%; margin: 0 10px 0 15px;
+          .sbLeftHeader {
+              & h2 {@include text('Roboto', normal, 500, 40px, 50px, 1px, #091133)};
+          }
+          .sbLeftFooter{margin-top: 220px}
+      }
+  }
+}
 //*****************************************************************************************************************
 .thirdBlock {
     display: flex;
-    border: 1px solid red;
+    //border: 1px solid red;
     width: 100%;
     height: $thirdBlock;
       .thirdBlockLeft {
-            border: 1px solid gold;
+            //border: 1px solid gold;
             width: 50%;
             height: 100%;
             & img {margin: 15% 5% 10% 17%; cursor: pointer;}
       }
       .thirdBlockRight{
-        border: 1px solid blueviolet;
+        //border: 1px solid blueviolet;
         width: 50%;
         height: 100%;
         .blockText {
@@ -178,9 +225,25 @@ header {
         }
       }
 }
+
+@media (max-width: 720px) {
+    .thirdBlock {width: 100%; height: $thirdBlockMob;
+        .thirdBlockLeft{display: none};
+            .thirdBlockRight{width: 100%; margin: 0 auto;
+                .blockText {
+                    width: 96%;
+                    margin: 5% auto;
+                    text-align: center;
+                    & h3 {@include text('Roboto', normal, 500, 30px, 40px, 1px, #091133); margin-bottom: 20px};
+                    & p {@extend %main_text};
+                    & button {@include button(1px, 2px, 'Roboto', normal, 500, 14px, 24px, #FFFFFF, #111B47, 150px, 32px); margin-top: 10%; cursor: pointer};
+                }
+            }
+    }
+}
 //*****************************************************************************************************************
 .fourBlock {
-    border: 1px solid violet;
+    //border: 1px solid violet;
     width: 100%;
     height: 800px;
     background-image: url("../images/fourBlockImage.svg");
@@ -199,9 +262,14 @@ header {
               & button {@include button(1px, 2px, 'Roboto', normal, 500, 14px, 24px, #FFFFFF, #111B47, 189px, 32px); cursor: pointer;}
       }
 }
+@media (max-width: 720px) {
+    .fourBlock { width: 100%; height: 600px;
+        .fourBlockContent {width: 98%;}
+  }
+}
 //*****************************************************************************************************************
 footer {
-    border: 1px solid green;
+    //border: 1px solid green;
     width: 100%;
     height: 216px / 4628px * 100%;
     display: flex;
@@ -247,7 +315,43 @@ footer {
       }
 
 }
-
+@media (max-width: 720px) {
+    footer {
+        width: 100%;
+        height: 200px;
+            .footerUp {
+                  display: flex;
+                  text-align: center;
+                  vertical-align: center;
+                  justify-content: space-around;
+                  flex-direction: column;
+                  flex-wrap: wrap;
+                  margin-top: 0;
+                  width: 98%;
+                  height: 80px;
+                  & p {@include text('Roboto', normal, 400, 12px, 18px, 1px, #939EA4)};
+                  & h3 {@include text('Roboto', normal, 700, 20px, 25px, 1px, #37447E)};
+                  & button {@extend %btn_little;margin-top: 0; width: 120px; height: 42px; margin-left: 40px};
+            }
+            .footerDown {
+                  width: 100%;
+                  flex-wrap: wrap;
+                  justify-content: flex-start;
+                      .footerDown_Left {
+                            width: 95%;
+                            margin: 15px auto;
+                            display: flex;
+                            justify-content: space-around;
+                      }
+                      .footerDown_Right {
+                            width: 95%;
+                            margin: 15px auto;
+                            display: flex;
+                            justify-content: space-around;
+                      }
+            }
+    }
+}
 
 
 

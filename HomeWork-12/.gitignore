@@ -21,3 +21,14 @@
   line-height: $lh;
   color: $col;
 }
+
+%headText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #091133;
+  }
+
+ ('Roboto', normal, 500, 15px, 20px, #505F98)
