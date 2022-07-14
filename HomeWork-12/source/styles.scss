@@ -7,7 +7,7 @@
   //border: 1px solid red;
   margin: 0 auto;
 }
-@media (max-width: 720px) {
+@media (max-width: 400px) {
   .wrapper { max-width: 360px; height: 4628px; margin: 0 auto; }
 }
 //шаблон тексту основного наповнення сайту
@@ -110,7 +110,7 @@ header {
         & h1 {@include text('Roboto', normal, 900, 26px, 38px, 1px, #37447E); margin-top: 12px}; //@mixin text
         & button {@extend %btn_little}
 }
-@media (max-width: 720px){
+@media (max-width: 400px){
   header {
     height: 110px;
     .leftHead {display: flex; width: 245 / 1440 * 100%; flex-direction: column; margin-top: 18px};
@@ -138,18 +138,25 @@ header {
             & button + button {@include button(2px solid #091133, 2px, 'Roboto', normal, 500, 16px, 26px, #091133, #E7ECFF, 189px, 26px); cursor: pointer}
         }
 }
-@media (max-width: 720px){
+@media (max-width: 1200px) {
+  .firstBlock { background-size: 40%;}
+
+}
+
+@media (max-width: 400px), (max-width: 800px){
   .firstBlock {
-      background: url("../images/mainFoto.svg");
+
+      background-position-x: -80%;
       width: 100%;
       height: 850px;
+      margin: 0 auto;
       .mainContent {
           text-align: center;
           width: 90%;
           margin: 0 auto;
           padding-top: 200px;
-          & h1 {@include text('Roboto', normal, 500, 40px, 50px, 1px, #091133);  };
-              .buttonBlock {display: flex; justify-content: space-between; width: 98%};
+          & h1 {@include text('Roboto', normal, 500, 40px, 50px, 1px, #091133); };
+          .buttonBlock {display: flex; justify-content: space-around; width: 98%};
           & button {width: 150px};
           & button + button {width: 150px};
       }
@@ -166,17 +173,22 @@ header {
     background-position-y: -10%;
     .sbLeft {
           width: 36%;
-          height: 422px / 742px * 100%;
+          //height: 440px;
           margin-top: 10%;
           margin-left: 7%;
+          display: flex;
+          flex-direction: column;
+
+
           .sbLeftHeader{
                 width: 100%;
-                height: 50%;
+                height: 55%;
                 & h2 {@extend %headText; margin-bottom: 15px / 742px * 100%};
                 & p {@extend %main_text}
           }
           .sbLeftFooter {
                 display: flex;
+            flex-wrap: wrap;
                 justify-content: space-between;
                 height: 138px / 422px * 100%;
                 margin-top: 56px / 422px * 100%;
@@ -189,13 +201,17 @@ header {
           }
     }
 }
-@media (max-width: 720px) {
-  .secondBlock {height: 550px; width: 95%;  background: none; text-align: center;
+@media (max-width: 1200px) {
+  .secondBlock { background-size: 40%;}
+}
+
+@media (max-width: 400px), (max-width: 800px) {
+  .secondBlock {height: 550px; width: 95%;  background: none; text-align: center; margin-bottom: 10%;
       .sbLeft {width: 98%; margin: 0 10px 0 15px;
           .sbLeftHeader {
               & h2 {@include text('Roboto', normal, 500, 40px, 50px, 1px, #091133)};
           }
-          .sbLeftFooter{margin-top: 220px}
+          .sbLeftFooter{margin-top: 25%}
       }
   }
 }
@@ -224,9 +240,12 @@ header {
         }
       }
 }
+@media (max-width: 900px) { .thirdBlockLeft{ & img {opacity: 0.1;} };}
 
-@media (max-width: 720px) {
-    .thirdBlock {width: 100%; height: $thirdBlockMob;
+
+
+@media (max-width: 400px), (max-width:740px) {
+    .thirdBlock {width: 96%; height: $thirdBlockMob;
         .thirdBlockLeft{display: none};
             .thirdBlockRight{width: 100%; margin: 0 auto;
                 .blockText {
@@ -261,7 +280,7 @@ header {
               & button {@include button(1px, 2px, 'Roboto', normal, 500, 14px, 24px, #FFFFFF, #111B47, 189px, 32px); cursor: pointer;}
       }
 }
-@media (max-width: 720px) {
+@media (max-width: 400px), (max-width: 800px) {
     .fourBlock { width: 100%; height: 600px;
         .fourBlockContent {width: 98%;}
   }
@@ -314,7 +333,7 @@ footer {
       }
 
 }
-@media (max-width: 720px) {
+@media (max-width: 400px), (max-width: 800px) {
     footer {
         width: 100%;
         height: 200px;
