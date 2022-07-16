@@ -93,8 +93,7 @@ h6{
     flex-shrink: 0;
 }
 @media (max-width: 400px){
-    .global {width: 360px;
-    }
+
     .icons {
         margin-top: 10px;
     }
