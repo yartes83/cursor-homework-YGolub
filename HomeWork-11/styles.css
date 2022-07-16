@@ -76,13 +76,13 @@ h6{
 
     width: 314px;
     height: 314px;
-
+    /*margin-bottom: 20px;*/
     background-image: url("images/back_foto.png");
     background-repeat: no-repeat;
 }
 .foto_collection {
     width: 100%;
-    height: 100vh;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
